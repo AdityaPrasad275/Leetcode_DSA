@@ -3,9 +3,10 @@ easy
 # Goal
 Check for duplicates that's all. 
 # Solution
-trick- sort and look for any i == i+1 occurence
+## trick
+sort and look for any i == i+1 occurence
   
-code -
+## code
   ```
 class Solution {
   public:
@@ -19,6 +20,6 @@ class Solution {
  };
   ```
   
-# Time complexity: O(n log n)
+## Time complexity: O(n log n)
 sort takes O(n log n) while looping takes O(n)
   
