@@ -32,4 +32,4 @@ public:
 ```
 ## Time Complexity: O(n)
 It's actually O(n + n) , cuz we touch every element atmost two time, one while confirming (num - 1) exists or nah and when while checking if (num + 1) exists are nah.  
-comment: i have no clue why this only beats like 5% in runtime, this is *better* than editorial (just a teeny tiny bit)
+comment: This give a "beats 5% in runtime" because the test cases are so small that O(n log n) becomes faster than O(n).
