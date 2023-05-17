@@ -1,5 +1,4 @@
-# Difficulty
-easy
+# Difficulty : easy
 # Goal
 Check for duplicates that's all. 
 # Solution
