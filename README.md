@@ -7,5 +7,6 @@ A repo for 150 problem set from neetcode's rodemap, all problems' simplified sta
 I follow https://neetcode.io/roadmap and other online resources.
 
 # Where we at right now 
-array & hashing done 🥳, 8/9 problems solved, 1 problem requires premium
-left = 141
+array & hashing done 🥳, 8/9 problems solved, 1 problem requires premium, cant help it.
+stack: 4 problems done
+left = 137
