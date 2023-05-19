@@ -64,5 +64,5 @@ if __name__ == "__main__":
     print(genrateParantheses(self=None, n=3))
 ```
 comment: python is sooooooo much simpler oh my lawd. easier code to make and most importantly, *easier to compile*
-## Time coplexity : O( $4^n/\sqrt{n}$ )
+## Time coplexity : $O(4^n/\sqrt{n})$ 
 4th [catalan number](https://en.wikipedia.org/wiki/Catalan_number#:~:text=In%20combinatorial%20mathematics%2C%20the%20Catalan,Belgian%20mathematician%20Eug%C3%A8ne%20Charles%20Catalan.)
