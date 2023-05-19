@@ -1,4 +1,5 @@
-# Difficulty: Easy
+# [Question](https://leetcode.com/problems/valid-anagram/)
+Difficulty: Easy
 # Goal 
 Find if s and t are anagram or not, basically if s and t have the same letters (count as well as type, basically composition of word)
 # Solution 

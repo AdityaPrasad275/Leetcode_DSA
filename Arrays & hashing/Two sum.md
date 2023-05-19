@@ -1,4 +1,5 @@
-# Difficuly : Easy
+# [Question](https://leetcode.com/problems/two-sum/)
+Difficuly : Easy
 # Goal
 find two numbers in arr such that they add up to target.
 eg. [2, 3, 4] and target = 7, return [1, 2] indices

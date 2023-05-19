@@ -1,4 +1,5 @@
-# Difficulty: Medium
+# [Question](https://leetcode.com/problems/product-of-array-except-self/)
+Difficulty: Medium
 # Goal
 A[i] = product of all numbers in a except a[i] , do this in O(n) without using division
 # Solution

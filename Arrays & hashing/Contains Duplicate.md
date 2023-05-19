@@ -1,4 +1,5 @@
-# Difficulty : easy
+# [Question](https://leetcode.com/problems/contains-duplicate/)
+Difficulty : easy
 # Goal
 Check for duplicates that's all. 
 # Solution

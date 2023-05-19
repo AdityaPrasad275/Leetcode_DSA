@@ -1,4 +1,5 @@
-# Difficulty: Medium
+# [Question](https://leetcode.com/problems/valid-sudoku/)
+Difficulty: Medium
 # Goal
 ## trick
 Check if given sudoku is valid or nah, which involves three steps:  

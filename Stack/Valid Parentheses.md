@@ -1,4 +1,5 @@
-# Difficulty: Easy
+# [Question](https://leetcode.com/problems/valid-parentheses/)
+Difficulty: Easy
 # Goal
 Check if every parantheses has it's partner or not. Standard stack problem
 # Solution
