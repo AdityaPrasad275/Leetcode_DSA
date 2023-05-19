@@ -48,5 +48,5 @@ public:
     }
 };
 ```
-## Time complexity: O(n)
+## Time complexity: $O(n)$
 Going through the loop once, the if for checking and switch for operation shouldn't change degree i think.
