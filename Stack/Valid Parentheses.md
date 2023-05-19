@@ -26,4 +26,4 @@ public:
     }
 };
 ```
-## Time complexity: O(n)
+## Time complexity: $O(n)$
