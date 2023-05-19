@@ -1,4 +1,5 @@
-# Difficulty: Medium
+# [Question](https://leetcode.com/problems/daily-temperatures/)
+Difficulty: Medium
 # Goal
 for an a[i] find the min a[j] such that a[j] > a[i]. (this is exactly reverse of stock price problem of cs213)
 # Solution
