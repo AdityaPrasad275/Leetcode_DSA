@@ -39,7 +39,6 @@ public:
 ```
 ### python
 ```
-from typing import List
 def genrateParantheses(self, n: int) -> List[str]:
     stack = []
     result = []
@@ -60,9 +59,6 @@ def genrateParantheses(self, n: int) -> List[str]:
     backtracking(0, 0)
     
     return result
-
-if __name__ == "__main__":
-    print(genrateParantheses(self=None, n=3))
 ```
 comment: python is sooooooo much simpler oh my lawd. easier code to make and most importantly, *easier to compile*
 ## Time coplexity : $O(4^n/\sqrt{n})$ 

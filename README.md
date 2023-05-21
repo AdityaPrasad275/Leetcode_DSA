@@ -11,5 +11,7 @@ I follow https://neetcode.io/roadmap and other online resources.
 ### array & hashing done 🥳
 8/9 problems solved, 1 problem requires premium, cant help it.  
 ### stack
-4 problems done  
+6/7 problems done  
+### Two Pointers
+1/5 problems done  
 

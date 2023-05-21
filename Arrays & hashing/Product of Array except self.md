@@ -11,28 +11,25 @@ The code invovles compressing these two "array generation" steps to one to get O
 
 ## Code
 ```
-class Solution {
-public:
-    std::vector<int> productExceptSelf(std::vector<int>& nums) {
-        int l = nums.size();
-        int prefix = 1;
-        std::vector<int> ans(l, 1);
-    
-        for (int i = 0; i < l - 1; i++) {
-            prefix *= nums[i];
-            ans[i+1] *= prefix;
-        }
+std::vector<int> productExceptSelf(std::vector<int>& nums) {
+    int l = nums.size();
+    int prefix = 1;
+    std::vector<int> ans(l, 1);
 
-        int postfix = 1;
-        ans[l - 1] *= postfix;
-        for (int i = l - 1; i > 0; i--) {
-            postfix *= nums[i];
-            ans[i-1] *= postfix;
-        }
-
-        return ans;
+    for (int i = 0; i < l - 1; i++) {
+        prefix *= nums[i];
+        ans[i+1] *= prefix;
     }
-};
+
+    int postfix = 1;
+    ans[l - 1] *= postfix;
+    for (int i = l - 1; i > 0; i--) {
+        postfix *= nums[i];
+        ans[i-1] *= postfix;
+    }
+
+    return ans;
+}
 ```
 ## Time Complexity: O(n)
 we'e really just looping twice through the given array

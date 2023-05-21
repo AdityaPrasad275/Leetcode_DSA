@@ -67,16 +67,15 @@ public:
 i just wanna add in python code to show just how simple it is. Just pure elegance.
 ### python
 ```
-class Solution:
-    def carFleet(self, target: int, position: List[int], speed: List[int]) -> int:
-        stack = []
-        for pos, vel in sorted(zip(position, speed))[::-1]:
-            dist = target - pos
-            if not stack:
-                stack.append(dist / vel)
-            elif dist / vel > stack[-1]:
-                stack.append(dist / vel)
-        return len(stack)
+def carFleet(self, target: int, position: List[int], speed: List[int]) -> int:
+    stack = []
+    for pos, vel in sorted(zip(position, speed))[::-1]:
+        dist = target - pos
+        if not stack:
+            stack.append(dist / vel)
+        elif dist / vel > stack[-1]:
+            stack.append(dist / vel)
+    return len(stack)
 ```
 # Time complexity : $O(nlogn)$
 Sorting takes $O(nlogn)$ , otherwise finding number of fleets is $O(n)$. There is a way to optimize time to $O(n)$ but it makes space of order $O(target)$

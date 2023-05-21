@@ -9,9 +9,7 @@ Check if given sudoku is valid or nah, which involves three steps:
 Use unordered set
 ## code
 ```
-class Solution {
-public:
-    bool isValidSudoku(std::vector<std::vector<char>>& board) {
+bool isValidSudoku(std::vector<std::vector<char>>& board) {
     // check rows
     for (int i = 0; i < 9; i++) {
         std::unordered_set<char> seen;
@@ -58,7 +56,7 @@ public:
 
     return true;
 }
-};
+
 ```
 
 ## Time complexity: O(3 * 81) 

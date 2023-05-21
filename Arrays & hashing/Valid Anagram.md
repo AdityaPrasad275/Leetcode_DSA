@@ -9,24 +9,21 @@ Find if s and t are anagram or not, basically if s and t have the same letters (
   
   ## Code
   ```
-  class Solution {
-    public:
-        bool isAnagram(string s, string t) {
-            if(s.size() != t.size()) return false;
+bool isAnagram(string s, string t) {
+    if(s.size() != t.size()) return false;
 
-            signed int charCount[26] = {0};
+    signed int charCount[26] = {0};
 
-            for(int i = 0; i < s.size(); i++){
-                charCount[(signed int)(s[i] - 'a')]++;
-                charCount[(signed int)(t[i] - 'a')]--;
-            }
-            for(auto x:charCount){
-                if(x!=0) return false;
-            }
-            return true;
-        }
+    for(int i = 0; i < s.size(); i++){
+        charCount[(signed int)(s[i] - 'a')]++;
+        charCount[(signed int)(t[i] - 'a')]--;
+    }
+    for(auto x:charCount){
+        if(x!=0) return false;
+    }
+    return true;
+}
 
-    };
   ```
   
   ## Time Complexity: O( size(t) )

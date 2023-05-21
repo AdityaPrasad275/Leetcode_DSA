@@ -11,25 +11,22 @@ Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefor
 Convert array to hash set and then look for every num whose num - 1 doesnt exist. This is the starting of a sequence. Now, go looking for num + 1 and find max seqLength.
 ## Code
 ```
-class Solution {
-public:
-    int longestConsecutive(vector<int>& nums) {
-        if(nums.size() == 0) return 0;
-        
-        set<int> numSet(nums.begin(), nums.end());
-        int maxSeqLength = 1;
+int longestConsecutive(vector<int>& nums) {
+    if(nums.size() == 0) return 0;
+    
+    set<int> numSet(nums.begin(), nums.end());
+    int maxSeqLength = 1;
 
-        for(int num : nums){
-            if(numSet.find(num - 1) == numSet.end()){
-                int currentNum = num + 1;
-                while(numSet.find(currentNum++) != numSet.end())
+    for(int num : nums){
+        if(numSet.find(num - 1) == numSet.end()){
+            int currentNum = num + 1;
+            while(numSet.find(currentNum++) != numSet.end())
 
-                maxSeqLength = max(maxSeqLength, currentNum - num);
-            }
+            maxSeqLength = max(maxSeqLength, currentNum - num);
         }
-        return maxSeqLength;
     }
-};
+    return maxSeqLength;
+}
 ```
 ## Time Complexity: O(n)
 It's actually O(n + n) , cuz we touch every element atmost two time, one while confirming (num - 1) exists or nah and when while checking if (num + 1) exists are nah.  

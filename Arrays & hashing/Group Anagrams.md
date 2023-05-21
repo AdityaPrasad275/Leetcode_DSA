@@ -11,25 +11,21 @@ So we make a hashmap where every string is mapped to it's sorted version. The so
 
 ## code
 ```
-class Solution {
-public:
-    vector<vector<string>> groupAnagrams(vector<string>& strs) {
-        unordered_map<string, vector<string>> group;
+vector<vector<string>> groupAnagrams(vector<string>& strs) {
+    unordered_map<string, vector<string>> group;
 
-        for(int i = 0; i < strs.size(); i++){
-            string s = strs[i];
-            sort(s.begin(), s.end());
-            group[s].push_back(strs[i]);
-        }
-        vector<vector<string>> ans;
-
-        for(auto it: group){
-            ans.push_back(it.second);
-        }
-        return ans;
+    for(int i = 0; i < strs.size(); i++){
+        string s = strs[i];
+        sort(s.begin(), s.end());
+        group[s].push_back(strs[i]);
     }
+    vector<vector<string>> ans;
 
-};
+    for(auto it: group){
+        ans.push_back(it.second);
+    }
+    return ans;
+}
 ```
 ## Time Complexity: O(m * n log n )
 M is the size of the given vector of strings (or how many strings there are) while n is average length of a string. n log n is the time taken by sort algorithm.  
