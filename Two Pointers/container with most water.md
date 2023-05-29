@@ -18,4 +18,4 @@ int maxArea(vector<int>& heights){
     return maxArea;
 }
 ```
-## Time Complexity:$O(n)$
+## Time Complexity: $O(n)$
