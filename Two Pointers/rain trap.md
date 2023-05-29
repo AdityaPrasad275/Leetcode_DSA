@@ -1,0 +1,1 @@
+Solved it [here](https://leetcode.com/problems/trapping-rain-water/solutions/3541732/stupidly-simple-solution-cpp-beats-90-runtime-and-95-in-space-complexity/)
