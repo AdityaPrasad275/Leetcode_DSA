@@ -77,5 +77,7 @@ def carFleet(self, target: int, position: List[int], speed: List[int]) -> int:
             stack.append(dist / vel)
     return len(stack)
 ```
+comment - the elegance is due to sorted(zip(position, speed)) which combines position and speed Lists into a map and then sorts it. I have to make functions for this in cpp.
+
 # Time complexity : $O(nlogn)$
-Sorting takes $O(nlogn)$ , otherwise finding number of fleets is $O(n)$. There is a way to optimize time to $O(n)$ but it makes space of order $O(target)$
+Sorting takes $O(nlogn)$ , otherwise finding number of fleets is $O(n)$. There is a way to optimize time to $O(n)$ but it has space complexity of $O(target)$
