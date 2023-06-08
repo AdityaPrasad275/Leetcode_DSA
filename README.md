@@ -2,12 +2,12 @@
 A repo for 150 problem set from neetcode's rodemap, all problems' simplified statement and their answer is stored here
 
 # Plan of action
-17th may to 30th June (~45 days) is timeperiod for completion of 150 problems.
+17th may to 30th July is timeperiod for completion of 150 problems.
 
 I follow https://neetcode.io/roadmap and other online resources.
 
 # Where we at right now 
-## problems left = 121
+## problems left = 116
 ### array & hashing done 🥳
 8/9 problems solved, 1 problem requires premium, cant help it.  
 ### stack done 🥳
@@ -15,7 +15,7 @@ I follow https://neetcode.io/roadmap and other online resources.
 ### Two Pointers done 🥳
 5/5  done  
 ### Linked List
-2/11  done
+7/11  done
 ### Binary Search
 5/7  done
 ### Sliding window
