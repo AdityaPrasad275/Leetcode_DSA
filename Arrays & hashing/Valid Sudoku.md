@@ -8,7 +8,7 @@ Check if given sudoku is valid or nah, which involves three steps:
 3) check every 3x3 cell for uniqueness  
 Use unordered set
 ## code
-```
+```cpp
 bool isValidSudoku(std::vector<std::vector<char>>& board) {
     // check rows
     for (int i = 0; i < 9; i++) {

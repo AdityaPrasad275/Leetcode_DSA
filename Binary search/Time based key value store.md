@@ -6,7 +6,7 @@ Basically, create a hashmap that can store multiple values for a given key, each
 ## Trick
 attach a vector of pairs to each map[key] and then do binary search on it to retreive the correct value given a timestamp. Keep in mind, you have to return value whose timestamp is greatest integer less than timestamp asked.   
 ## Code
-```
+```cpp
 class TimeMap {
 public:
     TimeMap() {}

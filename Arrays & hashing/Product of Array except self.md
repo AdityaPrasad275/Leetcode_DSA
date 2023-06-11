@@ -10,7 +10,7 @@ the middle array is the one given to us, top array is prefix array while bottom 
 The code invovles compressing these two "array generation" steps to one to get O(n).
 
 ## Code
-```
+```cpp
 std::vector<int> productExceptSelf(std::vector<int>& nums) {
     int l = nums.size();
     int prefix = 1;

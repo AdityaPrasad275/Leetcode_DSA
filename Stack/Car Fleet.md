@@ -16,7 +16,7 @@ Map the (target - position) and speed and then sort this map in ascending order 
 
 ## code
 ### cpp
-```
+```cpp
 class Solution {
 public:
     int carFleet(int target, vector<int>& position, vector<int>& speed) {
@@ -66,7 +66,7 @@ public:
 ```
 i just wanna add in python code to show just how simple it is. Just pure elegance.
 ### python
-```
+```python
 def carFleet(self, target: int, position: List[int], speed: List[int]) -> int:
     stack = []
     for pos, vel in sorted(zip(position, speed))[::-1]:

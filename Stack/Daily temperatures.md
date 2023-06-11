@@ -7,7 +7,7 @@ for an a[i] find the min a[j] such that a[j] > a[i]. (this is exactly reverse of
 Use stack. traverse array from n - 2 (second last index) to 0. From every a[i], compare it to element on top of stack. If a[i] > stack.top(), do stack.pop().  
 2 details. Stack stores indices. After every for loop, stack.insert(i) (add latest index)
 ## code
-```
+```cpp
 vector<int> dailyTemperatures(vector<int>& temp) {
     int n = temp.size();
     stack<int> index;

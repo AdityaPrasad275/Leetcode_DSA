@@ -11,7 +11,8 @@ Comment - The brute force defeats the smart method💀
 <img alt="runtime beats 100%" src="image.png">
 ## Code
 1st method -
-```
+
+```cpp
 ListNode* removeNthFromEnd(ListNode* head, int n) {
     int size = 0;
     ListNode* dummy = head;
@@ -35,8 +36,9 @@ ListNode* removeNthFromEnd(ListNode* head, int n) {
     return head;
 }
 ```
+
 2nd method -
-```
+```cpp
 ListNode* removeNthFromEnd(ListNode* head, int n) {
     ListNode* slow= head, *fast=head;
     while(n--){

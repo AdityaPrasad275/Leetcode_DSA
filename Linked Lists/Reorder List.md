@@ -10,7 +10,8 @@ Three ways - 2 of which take O(n) space and 1 of which is constant space.
 3. For constant space one, quite a few steps involved. First, find the middle of the llist. Then, reverse the second half of the llist. Then, merge the two llists.
 ## Code
 1st one ->
-```
+
+```cpp
 void reorderList(ListNode *head)
 {
     ListNode *dummy = head;
@@ -38,7 +39,7 @@ void reorderList(ListNode *head)
 }
 ```
 2nd one ->
-```
+```cpp
 void reorderList(ListNode* head) {
     if(head==NULL || head->next==NULL || head->next->next==NULL){
         return;
@@ -63,7 +64,7 @@ void reorderList(ListNode* head) {
 }
 ```
 3rd one ->
-```
+```cpp
 void reorderList(ListNode *head)
 {
     if(head->next == nullptr || head->next->next == nullptr) return;

@@ -8,7 +8,7 @@ Find k most frequent elements in a vector of int
 ## trick
 map every element to its frequency using hasmap, sort it in descending order using sort, vector of pairs and a comparision function (which is third argument of sort)
 ## code
-```
+```cpp
 vector<int> topKFrequent(vector<int>& nums, int k) {
 
     unordered_map<int, int> freqMap;

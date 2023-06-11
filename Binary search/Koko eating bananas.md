@@ -10,7 +10,7 @@ for a in arr:
 ## Trick
 As it turns out, sum $\geq$ arr.size(). Greatest value of sum will be when k = 1 and smallest when k = max(arr). So we do a binary search in {1, 2, ... max(arr)} and find min k such that the sum $\leq$ h.
 ## Code
-```
+```cpp
 int minEatingSpeed(std::vector<int>& piles, int h) {
     int l = 1, r = piles[std::max_element(piles.begin(), piles.end()) - piles.begin()];
     int k = 0, minK = r;

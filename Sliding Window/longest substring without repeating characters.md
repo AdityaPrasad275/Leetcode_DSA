@@ -6,7 +6,7 @@ Given a string, find the length of the longest substring without repeating chara
 ## Trick
 Maintain an unorder_set or hashset which can lookup, insert, erase characters in $O(1)$ time. Maintain two pointers, start = 0 and end = 0. Keep moving end forward until you find a repeating character (this can be done using set.find()). Now move start forward until you find the character which is repeating all the while removing characters from set. Keep track of the max length of the substring.
 ## Code
-```
+```cpp
 int lengthOfLongestSubstring(std::string s) {
     std::unordered_set<char> charSet;
 

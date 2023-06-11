@@ -10,7 +10,7 @@ Three methods (2 legit,1 cheat)
 3. Given max number of nodes = $10^4$ , just run a while loop $10^4 + 1$ times lol. either you'll encounter a nullptr , so no loop, or you'll overshoot max number of nodes, so yes loop!
 ## Code
 tortoise - heir method -
-```
+```cpp
 bool hasCycle(ListNode *head) {
     ListNode *fast = head, *slow = head;
 
@@ -23,7 +23,7 @@ bool hasCycle(ListNode *head) {
 }
 ```
 cheat method - 
-```
+```cpp
 bool hasCycle(ListNode *head) {
     int maxNodes = 10101;
     if(head == nullptr) return false;

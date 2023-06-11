@@ -7,7 +7,7 @@ Check for duplicates that's all.
 sort and look for any i == i+1 occurence
   
 ## code
-  ```
+```cpp
 bool containsDuplicate(vector<int>& nums) {
     sort(nums.begin(), nums.end());
     for(int i = 0; i<nums.size() - 1;i++){

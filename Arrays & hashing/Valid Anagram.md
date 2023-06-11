@@ -8,7 +8,7 @@ Find if s and t are anagram or not, basically if s and t have the same letters (
   while for every letter of t we decrease the count of corresponding letter in array. Sort of like a flip switch
   
   ## Code
-  ```
+  ```cpp
 bool isAnagram(string s, string t) {
     if(s.size() != t.size()) return false;
 

@@ -10,7 +10,7 @@ Just create a new linked list, straightforward, simple.
 Have two pointers, one (head) traversing given linked list and other (end) traversing your new forming Linked list.
 Create a new node (temp) using head pointer, make it point to end. Then do head = head->next and end = temp. (Shifting head ahead, bring end back)
 ## code
-```
+```cpp
 ListNode* reverseList(ListNode* head) {
     ListNode* end = nullptr;
     while(head != nullptr){

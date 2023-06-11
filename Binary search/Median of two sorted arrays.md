@@ -6,7 +6,7 @@ Given two sorted arrays, find median of comined array in $O(log(m+n))$ time.
 ## Trick
 It's not a trick, it's a whole algorithm. Neetcode explains the best - [soln](https://youtu.be/q6IEA26hvXc)
 ## Code
-```
+```cpp
 double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
     vector<int> &a = (nums1.size() <= nums2.size()) ? nums1 : nums2;
     vector<int> &b = (nums1.size() > nums2.size()) ? nums1 : nums2;

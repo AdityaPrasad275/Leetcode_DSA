@@ -6,19 +6,16 @@ Find minimum in rotated sorted array in $O(logn)$. ex. {4, 6, 7, 0, 1, 2}
 ## Trick
 Do binary search ofcourse. The way to update pointers is nums[mid] < nums[right] then search to the left of mid (right = mid), otherwise search to the left (left = mid + 1)
 ## Code
-```
+```cpp
 int findMin(vector<int>& nums) {
     int l = 0, r = nums.size() - 1;
     int m = 0;
-    // 6, 7, 0, 1, 2, 4, 5
-    // 0, 1, 2, 3, 4, 5, 6
-    // 5, 6, 7, 0, 1, 2, 4
+
     while(l<r){
         m = (l+r)/2;
         if(nums[m] < nums[r]) r = m;
         else l = m + 1; 
     }
-    //return min(nums[l], nums[r]);
     return nums[r];
 }
 ```

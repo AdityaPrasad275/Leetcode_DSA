@@ -6,7 +6,7 @@ Given a target, find two numbers in array that add up to target. Tho this time, 
 ## Trick
 Use left and right pointers on array. Two sum I used maps. But this time extra space needs to be constant so use pointers.
 ## Code
-```
+```cpp
 vector<int> twoSum(vector<int>& nums, int target) {
     int l = 0, r = nums.size() - 1;
     while(l < r){

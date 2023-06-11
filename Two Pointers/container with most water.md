@@ -6,7 +6,7 @@ Given heights array, find max area contained by height[i] and height[j] in $O(n)
 ## Trick
 Two pointers, L and R. Shift on basis of which pointer points to min(height[L], height[R]). L++, R--.
 ## Code
-```
+```cpp
 int maxArea(vector<int>& heights){
     int maxArea = 0;
     int i = 0, j = heights.size() - 1;

@@ -8,7 +8,7 @@ The trick is to use a doubly linked list and a hashmap. The doubly linked list w
 The put is even more complicated. first, check if the key is already present in the cache. if it is, then update the value and make this node the most used node. if it is not present, then check if the cache is full. if it is full, then delete the least used node and add this node to the front of the doubly linked list. if it is not full, then simply add this node to the front of the doubly linked list. (by front i mean make it most used node)
 ## Code
 // this is the code copilot generated, my code doesn't use in built list so is way more hideous. 
-```
+```cpp
 class LRUCache {
     int capacity;
     list<pair<int, int>> l;
@@ -43,7 +43,7 @@ public:
 <details>
 <summary> My hideous code (way too long)</summary>
 
-```
+```cpp
 class LRUCache {
 public:
     LRUCache(int capacity) {

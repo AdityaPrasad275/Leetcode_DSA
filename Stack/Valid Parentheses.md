@@ -6,7 +6,7 @@ Check if every parantheses has it's partner or not. Standard stack problem
 ## Trick
 Maintain a stack where the top() stores the latest open parentheses. Go through given string, check each character if it pairs with top(). if it does, pop(), doesn't, insert().In the end, there should be no leftover chars in stack for it to be valid.
 ## Code
-```
+```cpp
 bool isValid(string s) {
     if (s.size() % 2 == 1) return false;
     stack<char> st;

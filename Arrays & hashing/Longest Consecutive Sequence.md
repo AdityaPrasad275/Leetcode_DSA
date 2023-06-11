@@ -10,7 +10,7 @@ Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefor
 ## trick
 Convert array to hash set and then look for every num whose num - 1 doesnt exist. This is the starting of a sequence. Now, go looking for num + 1 and find max seqLength.
 ## Code
-```
+```cpp
 int longestConsecutive(vector<int>& nums) {
     if(nums.size() == 0) return 0;
     

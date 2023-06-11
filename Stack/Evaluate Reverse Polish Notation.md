@@ -8,7 +8,7 @@ Basically, '3 4 + 5 * 3 -' => (3 + 4) * 5 - 3
 Use a stack. Insert nums. When operation is encountered, pop of two times, push the resultant of operation.  
 `(int)(x[x.size() -1] - '0') >= 0` helps in differentiating between number and operation. The last char of string x is checked for num or not because first character can contain '-' for negative numbers
 ## code
-```
+```cpp
 int evalRPN(std::vector<std::string>& tokens) {
     std::stack<int> answer;
     for (auto x : tokens) {

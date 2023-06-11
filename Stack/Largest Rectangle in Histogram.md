@@ -6,7 +6,7 @@ Given a histogram(or a bunch of consecutive width 1 bars), find the area of the 
 ## Trick
 Find nextSmaller and prevSmaller elements for every height[i] and then find area. Maximise this. [A Great resource for this](https://leetcode.com/discuss/study-guide/2347639/A-comprehensive-guide-and-template-for-monotonic-stack-based-problems)
 ## Code
-```
+```cpp
 int largestRectangleArea(vector<int>& heights) {
     vector<int> nextSmaller(heights.size(), heights.size());
     vector<int> prevSmaller(heights.size(), -1);

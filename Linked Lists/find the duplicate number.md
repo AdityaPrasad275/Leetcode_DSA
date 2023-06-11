@@ -25,7 +25,7 @@ The start of the cycle is the duplicate number.The cycle detection algo is floyd
 </details>
 
 ## Code
-```
+```cpp
 int findDuplicate(vector<int>& nums) {
     int slow = nums[nums[0]];
     int fast = nums[nums[nums[0]]];
@@ -49,7 +49,7 @@ int findDuplicate(vector<int>& nums) {
   <summary> O(n) space solutions </summary>
 
   visited array one -
-  ```
+  ```cpp
   int findDuplicate(std::vector<int>& nums) {
     vector<bool> visited(nums.size(), false);
 
@@ -65,7 +65,7 @@ int findDuplicate(vector<int>& nums) {
   }
   ```
   hashmap one -
-  ```
+  ```cpp
   int findDuplicate(std::vector<int>& nums) {
     unordered_map<int, int> m;
 

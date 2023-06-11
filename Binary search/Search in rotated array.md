@@ -11,7 +11,7 @@ Bunch of nested if's and else's for binary search. Here's the basic flow (ofcour
 
 Else's are just for redirecting the pointers(or our search width) to the correct half of the array. If the target is in left half, while mid lands in right half, we need to update right pointer to mid-1. If the target is in right half, while mid lands in left half, we need to update left pointer to mid+1.
 ## Code
-```
+```cpp
 int search(vector<int>& nums, int target) {
     int left = 0, right = nums.size() - 1, mid = (left+right)/2;
     if(right == 0) return (nums[0]==target)?0:-1;

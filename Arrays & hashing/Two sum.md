@@ -7,7 +7,7 @@ eg. [2, 3, 4] and target = 7, return [1, 2] indices
 ## trick
 a hashmap (or a (int, int) map) that maps nums to indices. we loop through arr, find if (target - arr[i]) is already in the loop. 
 ## code
-```
+```cpp
 vector<int> twoSum(vector<int>& nums, int target) {
     map<int, int> indexStore;
 

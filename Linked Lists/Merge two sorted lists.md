@@ -8,7 +8,7 @@ Given two sorted LLists (Linked lists), merge them into one sorted llist.
 ## trick
 Have two pointers, l1 and l2 traversing the two llists. Compare l1->value and l2->value to see which one to move ahead and which value to store in our llist. Creating a dummy node really helps simplify. If one llists exhausts, simply append the other to it.
 ## code
-```
+```cpp
 ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
     ListNode *dummy, *temp;
     dummy = new ListNode();

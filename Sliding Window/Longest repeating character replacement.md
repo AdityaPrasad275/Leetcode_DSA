@@ -9,7 +9,7 @@ Now in this l-r window, find the character which repeats the most(using hashmap 
 
 Now in this window, if we can replace all the remaining characters with the most repeating character, then we have a valid substring.  If we cannot, move l forward. We can iteratively find maxLength of the substring.
 ## Code
-```
+```cpp
 int characterReplacement(std::string s, int k) {
     int l = 0, maxLength = 0, maxFreq = 0;
     std::unordered_map<char, int> charFreq;

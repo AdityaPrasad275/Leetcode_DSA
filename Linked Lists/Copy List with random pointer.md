@@ -11,7 +11,8 @@ Two ways to do this. One is smort and other is simple and intuitive.
 <image src="deepcopy.png">
 ## Code
 1. Using map
-```
+
+```cpp
 Node* copyRandomList(Node* head) {
     if(!head) return NULL;
     unordered_map<Node*, Node*> m;
@@ -29,8 +30,10 @@ Node* copyRandomList(Node* head) {
     return m[head];
 }
 ```
+
 2. Without map
-```
+
+```cpp
 Node* copyRandomList(Node* head) {
     if(!head) return NULL;
     Node* temp = head;
@@ -56,5 +59,6 @@ Node* copyRandomList(Node* head) {
     return newHead;
 }
 ```
+
 ## Time Complexity: $O(n)$
 First one takes space $O(n)$ and second one takes space $O(1)$. Both take time $O(n)$. (technically, second one should take $O(n)$ space but eh)

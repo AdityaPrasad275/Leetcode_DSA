@@ -13,7 +13,7 @@ Each iteration of while loop, make a node whose value = (num1 + num2 + carry)%10
 carry = (num1 + num2 + carry)/10.
 Keep in mind , if one llist is longer than other, then the remaining digits of longer llist are added to the sum as well. And when while loop has ended, last carry needs to be considered.
 ## Code
-```
+```cpp
 ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
     int carry = 0;
     ListNode* dummy = new ListNode;

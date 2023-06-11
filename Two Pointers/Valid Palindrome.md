@@ -9,7 +9,7 @@ Given a string, strip away spaces, punctuations, find if its a valid palindrome 
 Use isalnum() inbuilt function (or create one) to only check alpha numeric characters. Use left and right pointers and come closer with each iteration until $l > r$
 
 ## code
-```
+```cpp
 bool isPalindrome(string s){
         int left = 0, right = s.size()-1;
 

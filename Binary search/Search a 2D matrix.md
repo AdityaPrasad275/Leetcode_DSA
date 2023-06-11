@@ -15,7 +15,7 @@ The matrix is numbered in this way -
 | 0 | 1 | 2 |  
 | 3 | 4 | 5 |
 ## Code
-```
+```cpp
 bool searchMatrix(std::vector<std::vector<int>> matrix, int target) {
     int numRows = matrix.size(), numCols = matrix[0].size();
     int left = 0, right = numRows*numCols - 1, mid = 0, length = numRows*numCols;

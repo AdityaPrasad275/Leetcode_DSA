@@ -10,7 +10,7 @@ Generate all valid parentheses combinations for a given n (n is number of pairs)
 comment: this particular question is order sensitive so only particular implementation passes, so give importance to order of if statements in recursion.
 ## Code
 ### cpp
-```
+```cpp
 class Solution {
 public:
     vector<string> generateParenthes(int n){
@@ -38,7 +38,7 @@ public:
 };
 ```
 ### python
-```
+```python
 def genrateParantheses(self, n: int) -> List[str]:
     stack = []
     result = []

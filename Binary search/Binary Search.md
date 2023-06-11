@@ -6,7 +6,7 @@ Standard binary search in a sorted array.
 ## Trick
 Have a left, middle, right pointer. Middle = (left+right)/2. while(length > 0) and in each iteration length =/ 2.
 ## Code
-```
+```cpp
 int search(vector<int>& nums, int target) {
     int length = nums.size(), left = 0, right = nums.size() - 1, mid = 0;
 

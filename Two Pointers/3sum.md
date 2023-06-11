@@ -7,7 +7,7 @@ Find three numbers in an array that add up to zero. NO dupicates allowed.
 Use two sum II logic, except 'target' is maintained by another pointer that is updated in each iteration.  
 To avoid duplicates, first sort. Then when updating pointers, look for nums[ptr-1] == nums[ptr] and skip.
 ## Code
-```
+```cpp
 vector<vector<int>> threeSum(vector<int>& nums) {
     sort(nums.begin(), nums.end());
     vector<vector<int>> ans;

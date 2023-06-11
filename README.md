@@ -7,7 +7,9 @@ A repo for 150 problem set from neetcode's rodemap, all problems' simplified sta
 I follow https://neetcode.io/roadmap and other online resources.
 
 # Where we at right now 
-## problems left = 110
+## 41 problems done, 109 left
+![Progress](https://progress-bar.dev/38/?scale=100&width=300&color=brightgreen)
+
 ### array & hashing done 🥳
 8/9 problems solved, 1 problem requires premium, cant help it.  
 ### stack done 🥳
@@ -19,4 +21,4 @@ I follow https://neetcode.io/roadmap and other online resources.
 ### Binary Search done 🥳
 7/7  done
 ### Sliding window
-3/6 done
+4/6 done

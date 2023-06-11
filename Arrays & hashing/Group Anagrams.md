@@ -10,7 +10,7 @@ If we sort every string in given vector, every anagram will become same word ( [
 So we make a hashmap where every string is mapped to it's sorted version. The sorted version acts as the key to group of anagrams.
 
 ## code
-```
+```cpp
 vector<vector<string>> groupAnagrams(vector<string>& strs) {
     unordered_map<string, vector<string>> group;
 
