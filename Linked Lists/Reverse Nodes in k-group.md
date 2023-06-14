@@ -13,6 +13,16 @@ I'm going to explain $O(n)$ space soln because it's easier to understand. The $O
 Create two vectors, startingptrs and endingptrs. Startingptrs store the start of grp, endingptrs store the end of grp. So startingptrs[0] starts the 1st grp, endingptrs[0] ends the first grp. Then reverse each grp. In end link startingptrs[i-1] with endingptrs[i] and voila!
 
 The $O(1)$ space soln is basically this but it removes space by iteratively updating grpstart, groupend. And then linkes previous groupend with current groupstart. Something like that. It's a bit more complicated. I'll add a drawing.
+<details>
+
+<summary>
+Drawing explanation</summary>
+
+<image src="Reverse_llist_k_at_a_time1.jpg">
+</image>
+<image src="Reverse_llist_k_at_a_time2.jpg">
+</details>
+
 ## Code
 ```cpp
 ListNode* reverseKGroup(ListNode* head, int k) {
