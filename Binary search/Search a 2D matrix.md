@@ -6,7 +6,7 @@ In a 'sorted' matrix, do binary search. The matrix is made in a way such that,
 - The first integer of each row is greater than the last integer of the previous row.  
 
 Here's an example
-<img alt="Example from leetcode" src="mat.jpg">
+<img alt="Example from leetcode" src="images/mat.jpg">
 
 # Solution
 ## Trick

@@ -2,8 +2,8 @@
 Difficulty: Easy
 # Goal
 The infamous invert binary tree. Basically swap left and right for every node in the tree. Return modified tree's head.
-![Alt text](image.png)
-![Alt text](image-1.png)
+![Alt text](images/image.png)
+![Alt text](images/image-1.png)
 # Solution
 ## Trick
 The solution is very easy, swap right and left child of a node, call the function recursively on left and right child. Done

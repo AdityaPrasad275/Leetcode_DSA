@@ -8,7 +8,7 @@ eg. 1->2->3->4->5, n = 2, return 1->2->3->5
 Brute force - find length of llist, then traverse again to find the node to be deleted.  
 Smart method - use two pointers, one fast and one slow. Move the fast pointer n steps ahead of slow pointer. Then, move both pointers together till fast pointer reaches end of llist. Now, slow pointer is at the node to be deleted.  
 Comment - The brute force defeats the smart method💀
-<img alt="runtime beats 100%" src="image.png">
+<img alt="runtime beats 100%" src="images/image.png">
 ## Code
 1st method -
 

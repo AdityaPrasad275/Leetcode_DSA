@@ -8,7 +8,7 @@ Two ways to do this. One is smort and other is simple and intuitive.
 
 1. Use map! Map the old node to new node. This way you can directly find the node corresponding to oldNode->random. 
 2. Duplicate the nodes and attach them directly next to their original nodes (thus doubling the llist). Now, the random pointer of the new nodes will be the next node of the old node's random pointer. Now, you can just separate the two llists.
-<image src="deepcopy.png">
+<image src="images/deepcopy.png">
 ## Code
 1. Using map
 
