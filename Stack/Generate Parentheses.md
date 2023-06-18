@@ -6,7 +6,7 @@ Generate all valid parentheses combinations for a given n (n is number of pairs)
 ## Trick
 1) Use recursion  
 2) Realise that closed parenthesis ( '(' ) can only be "added in output string" when numOpen > numClosed. Output string is one particular combination of parenthesis we are constructing one parenthesis at a time  
-3) str.pop_back() is *very* important after every recursive call.
+3) str.pop_back() is ***very*** important after every recursive call.
 comment: this particular question is order sensitive so only particular implementation passes, so give importance to order of if statements in recursion.
 ## Code
 ### cpp

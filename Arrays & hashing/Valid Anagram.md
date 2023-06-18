@@ -26,5 +26,5 @@ bool isAnagram(string s, string t) {
 
   ```
   
-  ## Time Complexity: O( size(t) )
-  One loop over the string to match counts in each, then one loop over whole charCount array which takes O(26). 
+  ## Time Complexity: $O( size(t) )$
+  One loop over the string to match counts in each, then one loop over whole charCount array which takes $O(26)$. 

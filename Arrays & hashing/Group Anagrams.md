@@ -27,8 +27,8 @@ vector<vector<string>> groupAnagrams(vector<string>& strs) {
     return ans;
 }
 ```
-## Time Complexity: O(m * n log n )
-M is the size of the given vector of strings (or how many strings there are) while n is average length of a string. n log n is the time taken by sort algorithm.  
+## Time Complexity: $O(m\cdot n log n )$
+$m$ is the size of the given vector of strings (or how many strings there are) while $n$ is average length of a string. $n log n$ is the time taken by sort algorithm.  
   
-It is possible to convert this to O(c * m * n) using hashing of strings or what neetcode said, mapping int array of string to string ("eat" => [1a, 1e, 1t], "ate" => [1a, 1e, 1t]
+It is possible to convert this to $O(c \cdot m \cdot n)$ using hashing of strings or what neetcode said, mapping int array of string to string ("eat" => [1a, 1e, 1t], "ate" => [1a, 1e, 1t]
 But both of these worse time and space scores on leetcode so no idea how it is better

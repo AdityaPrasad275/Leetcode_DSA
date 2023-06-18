@@ -100,6 +100,6 @@ where,
 m = nummber of cells or rows * columns  
 l = max length of words
 
-The time complexity can also be written as or $O(m*4^l)$. We have a 4 in the time complexity because we are searching in 4 directions. The $3^{l-1}$ comes from the fact that we are not searching in the direction we came from. So we have 3 choices for the next letter. This is a very important observation.
+The time complexity can also be written as or $O(m\cdot 4^l)$. We have a 4 in the time complexity because we are searching in 4 directions. The $3^{l-1}$ comes from the fact that we are not searching in the direction we came from. So we have 3 choices for the next letter. This is a very important observation.
 
 Space: $O(n)$ -> n = total number of letters in dictionary (no overlap in Trie)

@@ -34,5 +34,6 @@ ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
     return dummy->next;
 }
 ```
-## Time Complexity: $O(min(n_1, n_2))$
-$n_1$ is length of llist 1 and $n_2$ is length of llist 2. Space complexity is $O(n_1 + n_2)$ as we are making a new llist.
+## Time Complexity: $O(n)$
+Where $n$ is $min(n_1, n_2)$, 
+$n_1$ is length of llist 1 and $n_2$ is length of llist 2. Space complexity is $O(1)$ as we are not creating any new nodes, just modifying the next pointers of existing nodes.

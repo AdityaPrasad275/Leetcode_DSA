@@ -32,5 +32,5 @@ bool searchMatrix(std::vector<std::vector<int>> matrix, int target) {
     return false;
 }
 ```
-## Time Complexity: $O(log(m*n))$
+## Time Complexity: $O(log(m\cdot n))$
 As we strech the matrix out, it becomes a $m*n$ array.

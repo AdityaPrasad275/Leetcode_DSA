@@ -148,4 +148,4 @@ private:
 };
 ```
 ## Time Complexity: $O(n)$
-O(n) for all methods, where n is the length of the string
+$O(n)$ for all methods, where n is the length of the string

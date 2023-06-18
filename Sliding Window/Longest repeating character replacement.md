@@ -1,7 +1,7 @@
 # [Question](https://leetcode.com/problems/longest-repeating-character-replacement/)
 Difficulty: Medium
 # Goal
-Given a string s, find k spots in it such that it forms the longest substring with repeating characters (all characters are uppercase alphabets). Return the length of this substring.
+Given a string s, find k spots in it such that if we replace these spots with any desired character, it forms the longest substring with repeating characters (all characters are uppercase alphabets). Return the length of this substring.
 # Solution
 ## Trick
 l = 0, r = 0 to s.end().

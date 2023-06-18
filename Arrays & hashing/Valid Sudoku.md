@@ -59,4 +59,4 @@ bool isValidSudoku(std::vector<std::vector<char>>& board) {
 
 ```
 
-## Time complexity: O(3 * 81) 
+## Time complexity: $O(3 \cdot 81)$ 

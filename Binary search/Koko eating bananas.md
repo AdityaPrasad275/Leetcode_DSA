@@ -32,6 +32,6 @@ long long int sum(std::vector<int>& piles, int k){
     return sum;
 }
 ```
-## Time Complexity: $O(nlogm)$
+## Time Complexity: $O(n\cdot logm)$
 Where n is size of array and m is max element of array.  
  Space complexity is $O(1)$

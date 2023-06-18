@@ -4,7 +4,7 @@ Difficulty: Medium
 Basically, create a hashmap that can store multiple values for a given key, each value being differed by timestamp. Sort of a linked list attached to each map[key] (but obv, ll is unoptimised)
 # Solution
 ## Trick
-attach a vector of pairs to each map[key] and then do binary search on it to retreive the correct value given a timestamp. Keep in mind, you have to return value whose timestamp is greatest integer less than timestamp asked.   
+attach a vector of pairs to each map[key] and then do binary search on it to retreive the correct value given a timestamp. Keep in mind, you have to return value whose timestamp is greatest integer less than timestamp asked. Binary search comes into play here.
 ## Code
 ```cpp
 class TimeMap {
@@ -37,5 +37,5 @@ private:
     unordered_map<string, vector<pair<string, int>>> timeMap;
 };
 ```
-## Time Complexity: $O(n logm)$
+## Time Complexity: $O(n\cdot  logm)$
 where n is number of keys and m is average number of values for a given key. If we did normal search when retrieve the value corresponding to given key and timestamp, it would take $O(nm)$. 

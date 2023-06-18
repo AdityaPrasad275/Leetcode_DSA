@@ -21,7 +21,7 @@ The start of the cycle is the duplicate number.The cycle detection algo is floyd
 </details>
 <details>
   <summary> Why is this problem difficult </summary>
-  Comment: This complexity in logic arises only due to space constraint. A simple way is to maintain a hashmap and keep track of the number of times each number appears. The number which appears twice is the duplicate number. This is $O(n)$ time and $O(n)$ space. Another way is to maintain a visited array. This is $O(n)$ time and $O(n)$ space. The trick is to do it in $O(1)$ space. This is the difficult part.
+  The complexity in logic arises only due to space constraint. A simple way is to maintain a hashmap and keep track of the number of times each number appears. The number which appears twice is the duplicate number. This is $O(n)$ time and $O(n)$ space. Another way is to maintain a visited array. This is $O(n)$ time and $O(n)$ space. The trick is to do it in $O(1)$ space. This is the difficult part.
 </details>
 
 ## Code

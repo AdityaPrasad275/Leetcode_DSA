@@ -20,5 +20,5 @@ vector<int> twoSum(vector<int>& nums, int target) {
     return {-1, -1};
 }
 ```
-## Time complexity : O(n)
+## Time complexity : $O(n)$
 Just once every loop

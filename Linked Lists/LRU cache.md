@@ -4,7 +4,7 @@ Difficulty: Medium
 Implement a data structure for Least Recently Used (LRU) cache. It should support the following operations: get and put. 
 # Solution
 ## Trick
-The trick is to use a doubly linked list and a hashmap. The doubly linked list will store the key and value of the cache. The hashmap will store the key and the pointer to the node in the doubly linked list. the get function has two things. first, find the key value pair and second, make this particular node the most used node.
+The trick is to use a doubly linked list and a hashmap. The doubly linked list will store the key and value of the cache and maintain a least used end and a most used end. The hashmap will store the key and the pointer to the node in the doubly linked list. the get function has two things. first, find the key value pair and second, make this particular node the most used node.
 The put is even more complicated. first, check if the key is already present in the cache. if it is, then update the value and make this node the most used node. if it is not present, then check if the cache is full. if it is full, then delete the least used node and add this node to the front of the doubly linked list. if it is not full, then simply add this node to the front of the doubly linked list. (by front i mean make it most used node)
 ## Code
 // this is the code copilot generated, my code doesn't use in built list so is way more hideous. 

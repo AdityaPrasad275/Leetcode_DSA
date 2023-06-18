@@ -10,7 +10,7 @@ Smart method - use two pointers, one fast and one slow. Move the fast pointer n 
 Comment - The brute force defeats the smart method💀
 <img alt="runtime beats 100%" src="images/image.png">
 ## Code
-1st method -
+Brute force -
 
 ```cpp
 ListNode* removeNthFromEnd(ListNode* head, int n) {
@@ -37,7 +37,7 @@ ListNode* removeNthFromEnd(ListNode* head, int n) {
 }
 ```
 
-2nd method -
+Smort method -
 ```cpp
 ListNode* removeNthFromEnd(ListNode* head, int n) {
     ListNode* slow= head, *fast=head;

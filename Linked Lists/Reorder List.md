@@ -86,7 +86,7 @@ void reorderList(ListNode *head)
     }
     temp2->next = temp1;
 
-    //sticthing the lists together
+    //stitching the lists together
     ListNode* secondHead = temp2;
     ListNode *ptr1 = head, *ptr2 = head->next;
     while(ptr2 != nullptr){

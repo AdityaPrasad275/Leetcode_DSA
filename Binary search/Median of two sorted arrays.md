@@ -30,5 +30,6 @@ double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
     }
 }
 ```
-## Time Complexity: $O(log(min(m, n)))$
+## Time Complexity: $O(logt)$
+Where $t$ is the size of the smaller array.
 The question asked for $O(log(m+n))$ but the solution is $O(log(min(m, n)))$. This is because we are doing binary search on the smaller array. The reason for this is that we are trying to find the partition point in the smaller array. The partition point in the larger array is determined by the partition point in the smaller array. So, we do binary search on the smaller array to find the partition point. This is the reason why we are doing binary search on the smaller array.

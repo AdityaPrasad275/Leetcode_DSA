@@ -1,5 +1,5 @@
 # [Question](https://leetcode.com/problems/minimum-window-substring/)
-Difficulty: H A R D. took me 3 fukin hrs gah damn. solved it tle in 30 min tho lol.
+Difficulty: H A R D. took me 3 fukin hrs gah damn. solved it with tle in 30 min tho lol.
 # Goal
 Given a string s, We have to find the smallest substring that contains all characters of another given string t.
 # Solution

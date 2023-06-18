@@ -4,8 +4,8 @@ Difficulty : easy
 Check for duplicates that's all. 
 # Solution
 ## trick
-sort and look for any i == i+1 occurence
-  
+1. sort and look for any i == i+1 occurence. $O(n\cdot log n)$ solution
+2. Maintain a count of each number in a map, if any count > 1, return true. $O(n)$ solution
 ## code
 ```cpp
 bool containsDuplicate(vector<int>& nums) {
@@ -15,8 +15,19 @@ bool containsDuplicate(vector<int>& nums) {
     }
     return false;
 }
-  ```
+```
+```cpp
+bool containsDuplicate(vector<int>& nums) {
+  unordered_map<int, int> numCount;
+
+  for(auto n: nums) numCount[n]++;
+
+  for(auto [num, count]: numCount)
+    if(count >1) return true;
   
-## Time complexity: O(n log n)
-sort takes O(n log n) while looping takes O(n)
+  return false;
+}
+```
+## Time complexity: $O(n)$
+sort takes $O(n\cdot log n)$ while map takes $O(n)$
   

@@ -33,6 +33,6 @@ vector<int> topKFrequent(vector<int>& nums, int k) {
 }
 
 ```
-## Time Complexity: O( m log m )
-m is the number of distinct elements.We sort this vector of distinct elements (well pairs, elements and their frequencies)  
-This would approach n making it O( n log n) but i added an if to shave just a bit (takes it from beats 50% to 90% runtime)
+## Time Complexity: $O( m log m )$
+$m$ is the number of distinct elements.We sort this vector of distinct elements (well pairs, elements and their frequencies)  
+This would approach n making it $O( n log n)$ but i added an if to shave just a bit (takes it from beats 50% to 90% runtime)

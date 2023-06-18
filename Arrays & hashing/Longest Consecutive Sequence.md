@@ -28,6 +28,6 @@ int longestConsecutive(vector<int>& nums) {
     return maxSeqLength;
 }
 ```
-## Time Complexity: O(n)
-It's actually O(n + n) , cuz we touch every element atmost two time, one while confirming (num - 1) exists or nah and when while checking if (num + 1) exists are nah.  
-comment: This give a "beats 5% in runtime" because the test cases are so small that O(n log n) becomes faster than O(n).
+## Time Complexity: $O(n)$
+It's actually $O(n + n)$ , cuz we touch every element atmost two time, one while confirming (num - 1) exists or nah and when while checking if (num + 1) exists are nah.  
+comment: This give a "beats 5% in runtime" because the test cases are so small that $O(n log n)$ becomes faster than $O(n)$.

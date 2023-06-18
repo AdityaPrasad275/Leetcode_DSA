@@ -31,5 +31,5 @@ std::vector<int> productExceptSelf(std::vector<int>& nums) {
     return ans;
 }
 ```
-## Time Complexity: O(n)
+## Time Complexity: $O(n)$
 we'e really just looping twice through the given array
