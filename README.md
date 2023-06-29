@@ -7,9 +7,10 @@ A repo for 150 problem set from neetcode's rodemap, all problems' simplified sta
 I follow https://neetcode.io/roadmap and other online resources.
 
 # Where we at right now 
-## 66 problems done, 84 left
-![Progress](https://progress-bar.dev/44/?scale=100&width=300&color=brightgreen)  
+## 75 problems done, 75 left
+![Progress](https://progress-bar.dev/50/?scale=100&width=300&color=brightgreen)  
 14th june - the 100s have been breached 🥳
+29th june - 50% done 🥳, we are halfway there
 ### array & hashing done 🥳
 8/9 problems solved, 1 problem requires premium, cant help it.  
 ### stack done 🥳
@@ -26,5 +27,7 @@ I follow https://neetcode.io/roadmap and other online resources.
 15/15 done
 ### Tries done 🥳
 3/3 done
-### Backtracking 
-3/9 done
+### Backtracking done 🥳
+9/9 done
+### Heap/priority_queue
+3/7 done
