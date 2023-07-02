@@ -7,8 +7,8 @@ A repo for 150 problem set from neetcode's rodemap, all problems' simplified sta
 I follow https://neetcode.io/roadmap and other online resources.
 
 # Where we at right now 
-## 75 problems done, 75 left
-![Progress](https://progress-bar.dev/50/?scale=100&width=300&color=brightgreen)  
+## 79 problems done !
+![Progress](https://progress-bar.dev/53/?scale=100&width=300&color=brightgreen)  
 14th june - the 100s have been breached 🥳
 29th june - 50% done 🥳, we are halfway there
 ### array & hashing done 🥳
@@ -23,11 +23,11 @@ I follow https://neetcode.io/roadmap and other online resources.
 7/7  done
 ### Sliding window done 🥳
 6/6 done
-### Trees 
+### Trees done 🥳
 15/15 done
 ### Tries done 🥳
 3/3 done
 ### Backtracking done 🥳
 9/9 done
-### Heap/priority_queue
-3/7 done
+### Heap/priority_queue done 🥳
+7/7 done
