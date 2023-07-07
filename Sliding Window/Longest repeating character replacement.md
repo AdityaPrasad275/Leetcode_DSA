@@ -8,6 +8,8 @@ l = 0, r = 0 to s.end().
 Now in this l-r window, find the character which repeats the most(using hashmap or an alphabet map (26 length array)).
 
 Now in this window, if we can replace all the remaining characters with the most repeating character, then we have a valid substring.  If we cannot, move l forward. We can iteratively find maxLength of the substring.
+
+One thing to be noted is the sheer smartness in the line `maxFreq = std::max(maxFreq, charFreq[s[r]]);`. Not only does it maintain the maxFreq in current window but also it will never overshoot. This line in combination with if condition `if(r-l+1 - maxFreq> k)` works to make sure we are counting the maxFreq in current window only and that too without iterating over the whole map everytime, reducing the time complexity from $O(26\cdot n)$ to $O(n)$.
 ## Code
 ```cpp
 int characterReplacement(std::string s, int k) {
