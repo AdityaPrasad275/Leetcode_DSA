@@ -29,4 +29,4 @@ int characterReplacement(std::string s, int k) {
 }
 ```
 ## Time Complexity: $O(n)$
-One loop over the string. Now in maxFreq i did a smort thing which reduced ~$O(26n)$ to $O(n)$. Normally we would iterate over whole map to find max but just doing maxFreq = std::max(maxFreq, charFreq[s[r]]); is actually enough. This is because if the current character is not the most frequent character, then the maxFreq will not change. If it is the most frequent character, then maxFreq will change. So we are not iterating over the whole map. Space complexity is at max $O(26)$ for the map.
+One loop over the string. Now in maxFreq i did a smort thing which reduced ~ $O(26n)$ to $O(n)$. Normally we would iterate over whole map to find max but just doing `maxFreq = std::max(maxFreq, charFreq[s[r]]);` is actually enough. This is because if the current character is not the most frequent character, then the maxFreq will not change. If it is the most frequent character, then maxFreq will change. So we are not iterating over the whole map. Space complexity is at max $O(26)$ for the map.
