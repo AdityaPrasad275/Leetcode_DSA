@@ -9,7 +9,8 @@ Have two frequency hashmaps, one for t and one for s.
 Have two pointers, l and r. r increases our window size, l decreases our window size. if in our current window we don't have all the characters of t, we increase r. if we do have all the characters of t, we decrease l to the point we get the smallest window that houses every character of t. The r and l updation algo took me three hours, ain't no easy thing. [Neetcode](https://youtu.be/jSto0O4AJbM) explains it amazingly.
 ## Code
 ```cpp
-string minWindow(string s, string t) {
+string minWindow(string s, string t) 
+{
     if(t.size() > s.size())
         return "";
 

@@ -8,17 +8,19 @@ eg. [2, 3, 4] and target = 7, return [1, 2] indices
 a hashmap (or a (int, int) map) that maps nums to indices. we loop through arr, find if (target - arr[i]) is already in the loop. 
 ## code
 ```cpp
-vector<int> twoSum(vector<int>& nums, int target) {
-    map<int, int> indexStore;
+vector<int> twoSum(vector<int>& nums, int target) 
+{
+    unordered_map<int, int> indexStore;
 
-    for(int i = 0; i < nums.size(); i++){
-        if(indexStore.find(target - nums[i]) == indexStore.end()){     
+    for(int i = 0; i < nums.size(); i++)
+    {
+        if(indexStore.find(target - nums[i]) == indexStore.end())   
             indexStore[nums[i]] = i;
-        }
+        
         else return {indexStore[target - nums[i]], i};
     }
     return {-1, -1};
 }
 ```
-## Time complexity : $O(n)$
-Just once every loop
+## Time complexity : $O(nlogn)$ for map and $O(n)$ for unordered_map
+Just once every loop. map's find() takes $O(logn)$ time while unordered_map's find() takes $O(1)$ average time.

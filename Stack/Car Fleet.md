@@ -7,7 +7,7 @@ given an array $a$, find all the series(or the number of them) $a[i], a[i+1], a[
 $1)$ $a[i] = max( a[i+1], a[i+2], a[i+3].... a[j])$    
 $2)$ $a[j+1] > a[i]$
 
-how does it boil down to it.Let's look at the solution
+how does it boil down to it? Let's look at the solution
 
 # Solution
 ## trick
@@ -17,15 +17,19 @@ Map the (target - position) and speed and then sort this map in ascending order 
 ## code
 ### cpp
 ```cpp
-class Solution {
+class Solution 
+{
 public:
-    int carFleet(int target, vector<int>& position, vector<int>& speed) {
+    int carFleet(int target, vector<int>& position, vector<int>& speed) 
+    {
         vector<double> timeTakenVec = createTimeTakenVec(target, position, speed); //data manipulation
 
         int numFleets = 0;
         double maxTimeTaken = 0;
-        for (int i = 0; i < timeTakenVec.size(); i++){
-            if (timeTakenVec[i] > maxTimeTaken){
+        for (int i = 0; i < timeTakenVec.size(); i++)
+        {
+            if (timeTakenVec[i] > maxTimeTaken)
+            {
                 maxTimeTaken = timeTakenVec[i];
                 numFleets++;
             }
@@ -33,21 +37,26 @@ public:
         return numFleets;
     }
 
-    map<int, int> mapPositionToSpeed(int &target, vector<int>& position, vector<int>& speed){
+    map<int, int> mapPositionToSpeed(int &target, vector<int>& position, vector<int>& speed)
+    {
         map<int, int> posToSpeed;
-        for (int i = 0; i < position.size(); i++){
+        for (int i = 0; i < position.size(); i++)
+        {
             posToSpeed[target - position[i]] = speed[i];
         }
         return posToSpeed;
     }
-    vector<pair<int, int>> mapToVec(map<int, int> &posToSpeed){
+    vector<pair<int, int>> mapToVec(map<int, int> &posToSpeed)
+    {
         vector<pair<int, int>> posSpeedVec;
-        for (auto it = posToSpeed.begin(); it != posToSpeed.end(); it++){
+        for (auto it = posToSpeed.begin(); it != posToSpeed.end(); it++)
+        {
             posSpeedVec.push_back(make_pair(it->first, it->second));
         }
         return posSpeedVec;
     }
-    vector<double> createTimeTakenVec(int &target, vector<int> &position, vector<int> &speed){
+    vector<double> createTimeTakenVec(int &target, vector<int> &position, vector<int> &speed)
+    {
         map<int, int> posToSpeed = mapPositionToSpeed(target, position, speed);
 
         vector<pair<int, int>> posSpeedVec = mapToVec(posToSpeed);
@@ -57,7 +66,8 @@ public:
         });
 
         vector<double> timeTakenVec;
-        for (int i = 0; i < posSpeedVec.size(); i++){
+        for (int i = 0; i < posSpeedVec.size(); i++)
+        {
             timeTakenVec.push_back((double)posSpeedVec[i].first /posSpeedVec[i].second);
         }
         return timeTakenVec;

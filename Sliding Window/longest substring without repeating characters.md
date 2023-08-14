@@ -4,15 +4,18 @@ Difficulty: Medium
 Given a string, find the length of the longest substring without repeating characters.
 # Solution
 ## Trick
-Maintain an unorder_set or hashset which can lookup, insert, erase characters in $O(1)$ time. Maintain two pointers, start = 0 and end = 0. Keep moving end forward until you find a repeating character (this can be done using set.find()). Now move start forward until you find the character which is repeating all the while removing characters from set. Keep track of the max length of the substring.
+Maintain an unorder_set or hashset which can lookup, insert, erase characters in $O(1)$ time. Maintain two pointers, start = 0 and end = 0. Keep moving end forward until you find a repeating character (this can be done using find() ($O(n)$ time) or count() ($O(1)$ average time). Now move start forward until you find the character which is repeating all the while removing characters from set. Keep track of the max length of the substring.
 ## Code
 ```cpp
-int lengthOfLongestSubstring(std::string s) {
+int lengthOfLongestSubstring(std::string s) 
+{
     std::unordered_set<char> charSet;
 
     int l  = 0, res = 0;
-    for(int r = 0; r < s.size(); r++){
-        while(charSet.find(s[r]) != charSet.end()){
+    for(int r = 0; r < s.size(); r++)
+    {
+        while(charSet.count(s[r]))
+        {
             charSet.erase(s[l]);
             l++;
         }
@@ -23,4 +26,4 @@ int lengthOfLongestSubstring(std::string s) {
 }
 ```
 ## Time Complexity: $O(n)$
-One loop over the string. Each character is inserted and erased from the set atmost once. Insert and erase operations are $O(1)$ for unorder_set. Space complexity is $O(n)$ for the set.
+One loop over the string. Each character is inserted and erased from the set atmost once. Insert, erase and count operations are $O(1)$ for unordered_set. Space complexity is $O(n)$ for the set.

@@ -8,16 +8,19 @@ Check for duplicates that's all.
 2. Maintain a count of each number in a map, if any count > 1, return true. $O(n)$ solution
 ## code
 ```cpp
-bool containsDuplicate(vector<int>& nums) {
+bool containsDuplicate(vector<int>& nums) 
+{
     sort(nums.begin(), nums.end());
-    for(int i = 0; i<nums.size() - 1;i++){
+
+    for(int i = 0; i<nums.size() - 1;i++)
         if(nums[i]==nums[i+1]) return true;
-    }
+    
     return false;
 }
 ```
 ```cpp
-bool containsDuplicate(vector<int>& nums) {
+bool containsDuplicate(vector<int>& nums) 
+{
   unordered_map<int, int> numCount;
 
   for(auto n: nums) numCount[n]++;
