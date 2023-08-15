@@ -7,18 +7,25 @@ Given the root of a BST, find the kth smallest element in it.
 Use inorder traversal to get sorted array and then return kth element. Or maintain a counter.
 ## Code
 ```cpp
-class Solution {
+class Solution 
+{
 public:
-    int kthSmallest(TreeNode* root, int k) {
+    int kthSmallest(TreeNode* root, int k) 
+    {
         helper(root, k);
         return num;
     }
-    void helper(TreeNode* node, int &k){
+    void helper(TreeNode* node, int& k)
+    {
         if(!node) return;
 
         helper(node->left, k);
         counter++;
-        if(counter == k) num = node->val;
+        if(counter == k)
+        {
+            num = node->val;
+            return;
+        }
         helper(node->right, k);
         
         return;

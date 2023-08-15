@@ -124,8 +124,8 @@ functions -
 ## Sets
 
 ### unordered set -  generally provide a constant time lookup operation. 
-declaration - `unordered_set<type name> setName;`
-
+declaration - `unordered_set<type name> setName;`  
+No order preserved in unordered_set    
 functions -
 - `setName.insert(value)` - inserts value into the set, $O(1)$ average, $O(n)$ worst case
 - `setName.erase(value)` - removes value from the set, $O(1)$ average, $O(n)$ worst case
@@ -135,12 +135,79 @@ functions -
 
 
 ### ordered set
-declaration - `set<type name> setName;`
-
+declaration - `set<type name> setName;`  
+Preserves ascending order in set  
 functions -
 - `setName.insert(value)` - inserts value into the set, $O(logn)$
 - `setName.erase(value)` - removes value from the set, $O(logn)$
 - `setName.find(value)` - returns an iterator to the element with value, $O(logn)$
+
+
+## Maps
+
+### unordered map
+declaration - `unordered_map<key type, value type> mapName;`
+functions -
+- `mapName[key] = value` - inserts value into the map with key, $O(1)$ average, $O(n)$ worst case
+- `mapName.erase(key)` - removes the element with key from the map, $O(1)$ average, $O(n)$ worst case
+- `mapName.find(key)` - returns an iterator to the element with key, $O(1)$ average, $O(n)$ worst case
+
+### ordered map
+declaration - `map<key type, value type> mapName;`
+functions -
+- `mapName[key] = value` - inserts value into the map with key, $O(logn)$
+- `mapName.erase(key)` - removes the element with key from the map, $O(logn)$
+- `mapName.find(key)` - returns an iterator to the element with key, $O(logn)$
+
+## Lists
+
+### doubly linked list  
+declaration - `list<type name> listName;`
+
+functions -
+- `listName.push_back(value)` - inserts value at the end of the list, $O(1)$
+- `listName.pop_back()` - removes the last element of the list, $O(1)$
+- `listName.push_front(value)` - inserts value at the beginning of the list, $O(1)$
+- `listName.pop_front()` - removes the first element of the list, $O(1)$
+- `listName.insert(iterator, value)` - inserts value before the iterator, $O(1)$
+- `listName.erase(iterator)` - removes the element at the iterator, $O(1)$
+- `listName.erase(iterator1, iterator2)` - removes the elements between iterator1 and iterator2 (iterator2 not included in deletion), $O(n)$
+- `listName.clear()` - removes all the elements of the list, $O(n)$
+- `listName.size()` - returns the size of the list, $O(1)$
+- `listName.begin()` - returns an iterator to the first element of the list, $O(1)$
+- `listName.end()` - returns an iterator to the last element of the list, $O(1)$
+- `listName.splice(iterator, listName2)` - moves all the elements of listName2 to listName before the iterator, $O(1)$
+- `listName.splice(iterator, listName2, iterator2)` - moves the element at iterator2 of listName2 to listName before the iterator, $O(1)$
+
+lists are implemented as doubly linked lists. It is possible to iterate over a list.
+
+- access: $O(n)$
+- search: $O(n)$
+- insertion: $O(1)$
+- deletion: $O(1)$
+
+### singly linked list
+declaration - `forward_list<type name> listName;`
+
+functions -
+- `listName.push_front(value)` - inserts value at the beginning of the list, $O(1)$
+- `listName.pop_front()` - removes the first element of the list, $O(1)$
+- `listName.insert_after(iterator, value)` - inserts value after the iterator, $O(1)$
+- `listName.erase_after(iterator)` - removes the element after the iterator, $O(1)$
+- `listName.erase_after(iterator1, iterator2)` - removes the elements between iterator1 and iterator2 (iterator2 not included in deletion), $O(n)$
+- `listName.clear()` - removes all the elements of the list, $O(n)$
+- `listName.size()` - returns the size of the list, $O(1)$
+- `listName.begin()` - returns an iterator to the first element of the list, $O(1)$
+- `listName.end()` - returns an iterator to the last element of the list, $O(1)$
+
+`forward_list` are implemented as singly linked lists. It is possible to iterate over it.
+
+- access: $O(n)$
+- search: $O(n)$
+- insertion: $O(1)$
+- deletion: $O(1)$
+
+
 
 
 

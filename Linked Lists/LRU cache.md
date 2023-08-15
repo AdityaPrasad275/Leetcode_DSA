@@ -9,28 +9,34 @@ The put is even more complicated. first, check if the key is already present in 
 ## Code
 // this is the code copilot generated, my code doesn't use in built list so is way more hideous. 
 ```cpp
-class LRUCache {
+class LRUCache 
+{
     int capacity;
     list<pair<int, int>> l;
     unordered_map<int, list<pair<int, int>>::iterator> m;
 public:
-    LRUCache(int capacity) {
+    LRUCache(int capacity) 
+    {
         this->capacity = capacity;
     }
     
-    int get(int key) {
+    int get(int key) 
+    {
         if(m.find(key) == m.end()) return -1;
         l.splice(l.begin(), l, m[key]);
         return m[key]->second;
     }
     
-    void put(int key, int value) {
-        if(m.find(key) != m.end()){
+    void put(int key, int value) 
+    {
+        if(m.find(key) != m.end())
+        {
             l.splice(l.begin(), l, m[key]);
             m[key]->second = value;
             return;
         }
-        if(l.size() == capacity){
+        if(l.size() == capacity)
+        {
             int keyToDel = l.back().first;
             l.pop_back();
             m.erase(keyToDel);

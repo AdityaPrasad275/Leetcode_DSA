@@ -12,13 +12,16 @@ The answer to the first question is the sum (node->val + left + right). The answ
 One annoying part is negative numbers. for this, for each node, we take max of left and right with 0. This ensures we don't go adding paths with negative sum to our overall sum.
 ## Code
 ```cpp
-class Solution {
+class Solution 
+{
 public:
-    int maxPathSum(TreeNode* root) {
+    int maxPathSum(TreeNode* root) 
+    {
         helper(root);
         return sum;
     }
-    int helper(TreeNode* root){
+    int helper(TreeNode* root)
+    {
         if(!root) return 0;
 
         int left = max(helper(root->left), 0);
