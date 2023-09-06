@@ -39,20 +39,16 @@ int rob(vector<int>& nums) {
 ```cpp
 int rob(std::vector<int>& nums) 
 {
-    if(nums.size() == 1) return nums[0];
-    else if(nums.size()==2) return std::max(nums[0], nums[1]);
-    
-    int a = nums[0];
-    int b = std::max(nums[0], nums[1]);
-    int maxRob = max(a, b);
-    
-    for (int i = 2; i < nums.size(); i++)
+    int a = 0, b = 0, c;
+
+    for(int i = 0; i < nums.size(); i++)
     {
-        maxRob = max(a + nums[i], b);
+        c = max(nums[i] + a, b);
         a = b;
-        b = maxRob;
+        b = c;
     }
-    return max(a, b);
+    
+    return c;
 }
 ```
 ## Time Complexity: $O(n)$
