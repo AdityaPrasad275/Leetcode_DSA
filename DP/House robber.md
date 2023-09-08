@@ -25,7 +25,8 @@ Finally, return ans[0] which is the max we can get from the first house.
 ## Code
 1. Simple DP $O(n)$ space solution
 ```cpp
-int rob(vector<int>& nums) {
+int rob(vector<int>& nums) 
+{
     int n = nums.size();
     vector<int> ans(n + 2, 0); //taken n+2 to avoid explicitly doing if n==1 or n==2 base cases
     

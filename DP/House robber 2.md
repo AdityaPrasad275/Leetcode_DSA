@@ -47,7 +47,8 @@ int rob(vector<int>& nums)
 ```
 2. Smarty pants $O(1)$ space solution
 ```cpp
-class Solution {
+class Solution 
+{
 public:
     int rob(vector<int>& nums) 
     {
