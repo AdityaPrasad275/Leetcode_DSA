@@ -42,5 +42,5 @@ public:
 ```
 ## Time Complexity: $O(n^2)$
 It takes $O(n)$ time to check if a string is a palindrome. We do this for all the characters in the string. So, the time complexity is $O(n^2)$.
-## Space Complexity: $O(n)$
+## Space Complexity: $O(1)$
 We are not using any extra space
