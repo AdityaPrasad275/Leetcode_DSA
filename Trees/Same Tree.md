@@ -7,15 +7,16 @@ Check if two given trees are exactly identical. In structure and values.
 Just recursively check if the left and right subtrees are same. Use && operator to propagate the result up the tree.
 ## Code
 ```cpp
-bool isSameTree(TreeNode* p, TreeNode* q) {
-    if(p==nullptr && q==nullptr) return true;
-    if(p==nullptr || q==nullptr) return false;
-    if (p->val != q->val) return false;
+bool isSameTree(TreeNode* p, TreeNode* q) 
+{
+    if(p == nullptr && q == nullptr) return true;
+    if(p == nullptr or q == nullptr or (p->val != q->val)) return false;
+
 
     bool isLeftSame = isSameTree(p->left, q->left);
     bool isRightSame = isSameTree(p->right, q->right);
 
-    return isLeftSame && isRightSame;
+    return isLeftSame and isRightSame;
 }
 ```
 ## Time Complexity: $O(n)$

@@ -9,19 +9,23 @@ The infamous invert binary tree. Basically swap left and right for every node in
 The solution is very easy, swap right and left child of a node, call the function recursively on left and right child. Done
 ## Code
 ```cpp
-TreeNode* invertTree(TreeNode* root) {
+TreeNode* invertTree(TreeNode* root) 
+{
     helper(root);
     return root;
 }
-void helper(TreeNode* root){
+void helper(TreeNode* root)
+{
     if(root == nullptr) return; 
+
     TreeNode* temp = root->left;
     root->left = root->right;
     root->right = temp;
+
     helper(root->left);
     helper(root->right);
 }
 ```
 comment - using helper function is not necessary, but it makes the code more readable. 
 ## Time Complexity: $O(n)$
-eace node is visited once, so $O(n)$
+Each node is visited once, so $O(n)$
