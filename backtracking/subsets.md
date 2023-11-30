@@ -11,14 +11,17 @@ This is how us mortals think. There is another (maybe better) way to do this (it
 <summary><span style="font-size: larger;"><b>The dark magic of bit manipulation</b></span></summary>
 
 ```cpp
-vector<vector<int>> subsets(vector<int>& n) {
+vector<vector<int>> subsets(vector<int>& n) 
+{
     vector<vector<int>> s;
     vector<int> t;
     // Iterate over all numbers from 0 to 2^n.size() - 1
-    for(int i=0; i<(1<<n.size()); i++) {
+    for(int i=0; i<(1<<n.size()); i++) 
+    {
         t.clear(); // Clear the temporary vector
         // Iterate over each bit of the number i
-        for(int j=0; j<n.size(); j++) {
+        for(int j=0; j<n.size(); j++) 
+        {
             // If the j-th bit of i is set (i.e., 1), add n[j] to the subset
             if(i & (1<<j))
                 t.push_back(n[j]);
@@ -48,16 +51,20 @@ In summary, the subsets function generates all possible subsets of the input vec
 
 ## Code
 ```cpp
-class Solution {
+class Solution 
+{
 public:
     vector<vector<int>> ans;
     vector<int> temp;
-    vector<vector<int>> subsets(vector<int>& nums) {
+    vector<vector<int>> subsets(vector<int>& nums) 
+    {
         helper(nums, 0);
         return ans;
     }
-    void helper(vector<int>& nums, int index){
-        if(index == nums.size()){
+    void helper(vector<int>& nums, int index)
+    {
+        if(index == nums.size())
+        {
             ans.push_back(temp);
             return;
         }
