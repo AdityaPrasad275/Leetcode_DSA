@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
       // Fetch and render the Markdown content
-      fetch('../Arrays & hashing/Two sum.md')
+      fetch('./Arrays & hashing/Two sum.md')
         .then(response => response.text())
         .then(markdown => {
           document.getElementById('content').innerHTML = marked(markdown);
