@@ -7,7 +7,7 @@
     <title>Leetcode Problem</title>
     <link rel="stylesheet" href="./styles.css">
 
-    <!-- Marked for markdown-->
+    <!--Marked for markdown -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <!-- MathJax script here -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -15,23 +15,13 @@
     <!-- Highlight.js script here -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <!-- zero-md-->
+    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
   </head>
 
   <body>
-    <div id="problem-content"></div>
-
-    <!-- Initialize HLJS -->
-    <script>hljs.highlightAll();</script>
-
-    <script src="./loadProblem.js"></script>
-    <script>
-      // Get the problem URL parameter from the query string
-      const urlParams = new URLSearchParams(window.location.search);
-      const problemUrl = urlParams.get('url');
-      if (problemUrl) {
-        loadProblem(problemUrl);
-      }
-    </script>
+    <zero-md src="../Arrays & hashing/Contains Duplicate.md"></zero-md>
   </body>
 
 </html>
