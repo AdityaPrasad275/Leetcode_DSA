@@ -6,25 +6,23 @@
     <meta charset="UTF-8">
     <title>Leetcode Problem</title>
     <link rel="stylesheet" href="./styles.css">
+
     <!-- Marked for markdown-->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <!-- HLJS and MathJax script here -->
-    <script async src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <!-- MathJax script here -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/highlight.min.js"></script>
+    <!-- Highlight.js script here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
   </head>
 
   <body>
     <div id="problem-content"></div>
 
     <!-- Initialize HLJS -->
-    <script>
-      document.addEventListener('DOMContentLoaded', (event) => {
-        document.querySelectorAll('pre code').forEach((block) => {
-          hljs.highlightBlock(block);
-        });
-      });
-    </script>
+    <script>hljs.highlightAll();</script>
+
     <script src="./loadProblem.js"></script>
     <script>
       // Get the problem URL parameter from the query string
