@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'YourCustomFont';
+    src: url('./fonts/need1.otf') format('opentype');
+    /* You can also provide additional font formats for better browser compatibility */
+}
+
+body {
+    font-family: 'YourCustomFont', sans-serif;
+    /* Use the custom font in the 'font-family' property for the desired elements */
+}
