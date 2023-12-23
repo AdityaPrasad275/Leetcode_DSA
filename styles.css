@@ -1,12 +1,13 @@
-@font-face {
-    font-family: 'YourCustomFont';
-    src: url('./fonts/need1.otf') format('opentype');
-    /* You can also provide additional font formats for better browser compatibility */
-}
-
-body {
-    /*font-family: 'YourCustomFont', sans-serif;*/
-    /* Use the custom font in the 'font-family' property for the desired elements */
-    font-family: 'JetBrains Mono', monospace;
+.markdown-body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    word-wrap: break-word;
+    color: #333;
+    background-color: #fff;
+    padding: 30px;
+    margin: 30px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
 }
 
