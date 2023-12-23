@@ -5,6 +5,8 @@
 }
 
 body {
-    font-family: 'YourCustomFont', sans-serif;
+    /*font-family: 'YourCustomFont', sans-serif;*/
     /* Use the custom font in the 'font-family' property for the desired elements */
+    font-family: 'JetBrains Mono', monospace;
 }
+
