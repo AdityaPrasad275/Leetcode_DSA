@@ -22,5 +22,5 @@ vector<int> twoSum(vector<int>& nums, int target)
     return {-1, -1};
 }
 ```
-## Time complexity : $O(nlogn)$ for map and $O(n)$ for unordered_map
+## Time complexity : $O(nlogn)$ for map and $O(n)$ for `unordered_map`
 Just once every loop. map's find() takes $O(logn)$ time while unordered_map's find() takes $O(1)$ average time.

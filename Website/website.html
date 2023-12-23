@@ -1,0 +1,27 @@
+<!-- website.html in the root -->
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Leetcode Problem</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+
+  <body>
+    <h1 id="problem-title"></h1>
+    <div id="problem-content"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="./loadProblem.js"></script>
+    <script>
+      // Get the problem URL parameter from the query string
+      const urlParams = new URLSearchParams(window.location.search);
+      const problemUrl = urlParams.get('url');
+      if (problemUrl) {
+        loadProblem(problemUrl);
+      }
+    </script>
+  </body>
+
+</html>
