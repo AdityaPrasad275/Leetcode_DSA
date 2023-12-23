@@ -1,3 +1,16 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(140deg, rgb(207, 47, 152), rgb(106, 61, 236));
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .markdown-body{
     font-family: "JetBrains Mono", monospace;
     font-size: 20px;
@@ -9,15 +22,13 @@
     background-color: rgb(232 211 211 / 40%);
     color: white;
 }
+
 .markdown-body pre{
     font-family: "JetBrains Mono", monospace;
     font-size: 20px;
     line-height: 1.6;
 }
-body{
-    background-image: linear-gradient(140deg, rgb(207, 47, 152), rgb(106, 61, 236));
-    padding:50px;
-}
+
 .dashboard {
     font-family: "JetBrains Mono", monospace;
     font-size: 25px;
@@ -29,9 +40,10 @@ body{
     background-color: rgb(232 211 211 / 40%);
     color: white;
 }
+
 a{
     font-family: "JetBrains Mono", monospace;
-    font-size: 40px;
+    font-size: 20px;
     color: white;
     text-decoration: underline, solid;
 }
@@ -39,8 +51,8 @@ a:hover{
     border: 2px solid rgb(224 133 220 / 70%);
     border-radius: 5px;
     background-color: rgb(232 211 211 / 60%);
-    color: rgb(228, 226, 226);
-    font-size: 42px;
+    color: white;
+    font-size: 22px;
 }
 h1, h2, h3{
     color: black;
