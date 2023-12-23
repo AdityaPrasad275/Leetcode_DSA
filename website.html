@@ -5,8 +5,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Leetcode Problem</title>
-    <link rel="stylesheet" href="./website stuffs/styles.css">
-
+    
     <!-- Adding copy to clipboard button-->
     <script>
       // Make use of global config object to change default options
@@ -54,7 +53,11 @@
     <div class="content"></div>
 
     <!-- Content and other body elements -->
-    <zero-md id="markdown-container" no-shadow></zero-md>
+    <zero-md id="markdown-container" no-shadow>
+      <template data-merge="append">
+        <link rel="stylesheet" href="./website stuffs/styles.css">   
+      </template>
+    </zero-md>
     
     <script>
       document.addEventListener('DOMContentLoaded', () => {
