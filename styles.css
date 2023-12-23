@@ -4,9 +4,9 @@
     word-wrap: break-word;
     padding: 30px;
     margin: 30px;
-    border: 2px solid rgba(13, 13, 13, 0.7);
+    border: 2px solid rgb(224 133 220 / 70%);
     border-radius: 5px;
-    background-color: rgba(13, 13, 13, 0.4);
+    background-color: rgb(232 211 211 / 40%);
     color: white;
 }
 .markdown-body pre{
@@ -29,9 +29,15 @@ body{
     background-color: rgb(232 211 211 / 40%);
     color: white;
 }
-
-a{
+a.problem{
     font-family: "JetBrains Mono", monospace;
     font-size: 18px;
     color: white;
+}
+a.problem:hover{
+    border: 2px solid rgb(224 133 220 / 70%);
+    border-radius: 5px;
+    background-color: rgb(232 211 211 / 60%);
+    color: white;
+    font-size: 20px;
 }
