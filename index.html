@@ -15,7 +15,7 @@
       fetch('./Arrays & hashing/Two sum.md')
         .then(response => response.text())
         .then(markdown => {
-          document.getElementById('content').innerHTML = marked(markdown);
+          document.getElementById('content').innerHTML = marked.parse(markdown);
         });
     </script>
   </body>
