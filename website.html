@@ -22,7 +22,7 @@
         const markdownContainer = document.getElementById('markdown-container');
 
         if (url) {
-          markdownContainer.setAttribute('src', `../${url}`);
+          markdownContainer.setAttribute('src', `./${url}`);
         } else {
           console.error('No "url" parameter found in the query string.');
         }
