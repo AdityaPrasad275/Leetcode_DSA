@@ -3,7 +3,7 @@ Difficulty: Medium
 # Goal
 Find the number of 'good nodes'
 good nodes are such nodes that getting to them from root, you may only pass through nodes with values less than or equal to the 'good' node's value.  
-ex. ![Alt text](images/goodnode.png)
+ex. <img src="./Trees/images/goodnode.png">
 
 # Solution
 ## Trick

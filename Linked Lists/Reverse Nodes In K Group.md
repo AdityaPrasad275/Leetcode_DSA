@@ -4,8 +4,8 @@ Difficulty: Hard (edge cases are annoying and make this hard. Also $O(1)$ space 
 Given a linked list, reverse the nodes of a linked list k at a time and return its modified list.
 
 
-ex . ![ex.](images/image-1.png)
-![ex.](images/image-3.png)
+ex . <img src="./Linked Lists/images/image-1.png">
+<img src="./Linked Lists/images/image-3.png">
 # Solution
 ## Trick
 I'm going to explain $O(n)$ space soln because it's easier to understand. The $O(1)$ space soln is some dark magic i'm afraid to implement. I'll try to explain it in end.

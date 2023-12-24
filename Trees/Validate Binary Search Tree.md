@@ -13,7 +13,7 @@ My first approach was to just check if left node is less than root and right nod
 Neetcode's soln is pretty smart and elegant. Basically every node has upper and lower bound in BST. For the left child, the upper bound is the parent's value and the lower bound is the minimum possible value. For the right child, the lower bound is the parent's value and the upper bound is the maximum possible value. But when we go left then right, we have lower bound as direct parent's value while upper bound is parent's parent value. So we can do this recursively and pass along the upper and lower bounds as we go right and left. Pretty smart and elegant.
 
 My soln came to me after pondering over the question for 3 days. It's the fact that inorder traversal of a BST gives a sorted array. Now the realisation did hit me while thinking abt it in the morning but i'd like to say   
-![It was revealed to me in a dream](images/validate_BST.jpg)
+<img src="./Trees/images/validate_BST.jpg">
 ## Code
 my soln -
 ```cpp
