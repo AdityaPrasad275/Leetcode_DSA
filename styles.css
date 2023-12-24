@@ -20,6 +20,7 @@ body {
     border-radius: 5px;
     background-color: rgb(232 211 211 / 40%);
     color: white;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1), -1px -1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .markdown-body pre{
@@ -30,27 +31,15 @@ body {
 
 .dashboard {
     font-family: "JetBrains Mono", monospace;
-    font-size: 25px;
+    font-size: 20px;
     word-wrap: break-word;
     padding: 30px;
     margin: 30px;
     border: 2px solid rgb(224 133 220 / 70%);
     border-radius: 5px;
     background-color: rgb(232 211 211 / 40%);
-    color: white;
-}
-.dashboard a{
-    font-family: "JetBrains Mono", monospace;
-    font-size: 20px;
-    color: white;
-    text-decoration: underline, solid;
-}
-.dashboard a:hover{
-    border: 2px solid rgb(224 133 220 / 70%);
-    border-radius: 5px;
-    background-color: rgb(232 211 211 / 60%);
-    color: white;
-    font-size: 22px;
+    color: black;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2), -1px -1px 3px rgba(0, 0, 0, 0.1);
 }
 h1, h2, h3{
     color: black;
@@ -75,4 +64,51 @@ pre[class*="language-"] .token.punctuation, .token.operator {
 }
 .copy-to-clipboard-button:hover {
     color: white !important;
+}
+/* Existing styles */
+.links-list a{
+    font-family: "JetBrains Mono", monospace;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.easy a:hover {
+    border: 2px solid rgb(224 133 220 / 70%);
+    border-radius: 5px;
+    background-color: rgba(0, 255, 0, 0.4);
+    color: white;
+    font-size: 22px;
+}
+
+.medium a:hover {
+    border: 2px solid rgb(224 133 220 / 70%);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 0, 0.4);
+    color: white;
+    font-size: 22px;
+}
+
+.hard a:hover {
+    border: 2px solid rgb(224 133 220 / 70%);
+    border-radius: 5px;
+    background-color: rgba(255, 0, 0, 0.4);
+    color: white;
+    font-size: 22px;
+}
+
+/* Difficulty level styles */
+li.easy{
+    color: green;
+}
+li.medium{
+    color: yellow;
+}
+li.hard{
+    color: red;
+}
+
+.neetcode{
+    text-decoration: none;
+    color:blue;
 }
