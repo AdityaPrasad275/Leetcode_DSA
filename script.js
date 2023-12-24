@@ -5,7 +5,7 @@ const linkMap = new Map([
   ["Arrays and Hashing", [
     ["Contains Duplicate", 1],
     ["Valid Anagram", 1],
-    ["Two Sum", 2],
+    ["Two sum", 2],
     ["Group Anagrams", 2],
     ["Top K Frequent Elements", 2],
     ["Product of Array except self", 2],
@@ -52,7 +52,7 @@ const linkMap = new Map([
     ["Remove Nth Node From End of List", 2],
     ["Copy List With Random Pointer", 2],
     ["Add Two Numbers", 2],
-    ["Linked List Cycle", 1],
+    ["Linked List cycle", 1],
     ["Find The Duplicate Number", 2],
     ["LRU Cache", 2],
     ["Merge K Sorted Lists", 3],
@@ -100,7 +100,7 @@ const linkMap = new Map([
     ["Letter Combinations of a Phone Number", 2],
     ["N Queens", 3]
   ]],
-  ["Graphs", [
+  ["Graph", [
     ["Number of Islands", 2],
     ["Clone Graph", 2],
     ["Max Area of Island", 2],
