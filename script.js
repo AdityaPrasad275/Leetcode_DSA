@@ -21,14 +21,14 @@ const linkMap = new Map([
     ["Car Fleet", 2],
     ["Largest Rectangle in Histogram", 3]
   ]],
-  ["Two pointers", [
+  ["Two Pointers", [
     ["Valid Palindrome", 1],
     ["Two Sum II", 2],
     ["3Sum", 2],
     ["Container with most water", 2],
     ["Trapping rain water", 3]
   ]],
-  ["Binary Search", [
+  ["Binary search", [
     ["Binary Search", 1],
     ["Search a 2D Matrix", 2],
     ["Koko Eating Bananas", 2],
