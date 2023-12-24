@@ -55,3 +55,20 @@ h1, h2, h3{
 summary{
     color: black;
 }
+pre[class*="language-"], code{
+    text-shadow: none !important;
+    background-color: rgba(232, 211, 211, 0.5);
+    font-family: "JetBrains Mono", monospace;
+}
+
+pre[class*="language-"] .token.punctuation, .token.operator {
+    color: inherit; /* Use the default text color for symbols */
+    background: none; /* Remove background highlighting for symbols */
+}
+
+.copy-to-clipboard-button {
+    color: black !important;
+}
+.copy-to-clipboard-button:hover {
+    color: white !important;
+}
