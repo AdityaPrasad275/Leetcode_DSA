@@ -67,12 +67,16 @@ pre[class*="language-"] .token.punctuation, .token.operator {
 }
 /* Existing styles */
 .links-list a{
+    transform: scale(1.05);
     font-family: "JetBrains Mono", monospace;
     font-size: 20px;
     color: white;
     text-decoration: none;
+    padding: 2px 4px 2px 4px;
 }
-
+.links-list a:hover {
+    transition: transform 0.3s ease, border 0.3s ease, border-radius 0.3s ease, background-color 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+}
 .easy a:hover {
     border: 2px solid rgb(224 133 220 / 70%);
     border-radius: 5px;
@@ -111,4 +115,7 @@ li.hard{
 .neetcode{
     text-decoration: none;
     color:#0366d6;
+}
+li{
+    margin: 7px;
 }
