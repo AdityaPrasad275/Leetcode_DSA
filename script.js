@@ -145,7 +145,10 @@ function constructURL(folder, filename) {
 function createLinks(container, map) {
   map.forEach((entries, category) => {
     const categoryDiv = document.createElement('div');
-    categoryDiv.innerHTML = `<h3>${category}</h3>`;
+    categoryDiv.innerHTML = `<button class="accordion">${category}</button>`;
+    const panelDiv = document.createElement('div');
+    panelDiv.classList.add('panel');
+    categoryDiv.appendChild(panelDiv);
 
     entries.forEach(entry => {
       const [filename, difficulty] = entry;
@@ -165,13 +168,31 @@ function createLinks(container, map) {
         listItem.classList.add('hard');
       }
       listItem.appendChild(linkElement);
-      categoryDiv.appendChild(listItem);
+      panelDiv.appendChild(listItem);
     });
 
     container.appendChild(categoryDiv);
   });
 }
 
+function accordion() {
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }
+}
+
 // Example usage
 const arrayContainer = document.querySelector('.links-list');
 createLinks(arrayContainer, linkMap);
+accordion();

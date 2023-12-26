@@ -119,3 +119,39 @@ li.hard{
 li{
     margin: 7px;
 }
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  transition: 0.4s;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 20px;
+  word-wrap: break-word;
+  padding: 10px;
+  margin: 10px 10px 10px 10px ;
+  border: 2px solid rgb(224 133 220 / 70%);
+  border-radius: 5px;
+  background-color: rgb(232 211 211 / 30%);
+  color: black;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: rgb(232 211 211 / 70%);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 20px;
+  word-wrap: break-word;
+  background-color: rgb(232 211 211 / 40%);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin: 0px 0px 0px 30px;
+  border-radius: 5px;
+}
