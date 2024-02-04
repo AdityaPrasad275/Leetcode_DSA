@@ -129,6 +129,25 @@ const linkMap = new Map([
   ]]
 ]);
 
+const problemClassTechnique = new Map([
+  ["Arrays and Hashing",
+    "Maintaining frequency of elements - Hashing, 26 length arrays for strings, sets for ensuring duplicate elements are not present\n"
+  + "Grouping elements based on property asked in question\n"
+  + "Prefix, suffix arrays\n"],
+  ["Stack", "Stack"],
+  ["Two Pointers", "Two Pointers"],
+  ["Binary search", "Binary Search"],
+  ["Sliding Window", "Sliding Window"],
+  ["Linked Lists", "Linked List"],
+  ["Trees", "Tree"],
+  ["Tries", "Trie"],
+  ["Heap", "Heap"],
+  ["Backtracking", "Backtracking"],
+  ["Graph", "Graph"],
+  ["Dynamic Programming 1", "Dynamic Programming"],
+  ["Bit Manipulation", "Bit Manipulation"]
+]);
+
 // Function to encode special characters in a string
 function encodeURLParam(param) {
   return encodeURIComponent(param);
@@ -141,15 +160,27 @@ function constructURL(folder, filename) {
   return `./website.html?url=${encodedFolder}/${encodedFilename}.md`;
 }
 
-// Function to create and append links
-function createLinks(container, map) {
-  map.forEach((entries, category) => {
-    const categoryDiv = document.createElement('div');
-    categoryDiv.innerHTML = `<button class="accordion">${category}</button>`;
-    const panelDiv = document.createElement('div');
-    panelDiv.classList.add('panel');
-    categoryDiv.appendChild(panelDiv);
+// function to create blocks for each category. Each category has a title, its problem solving techinque/description and the list of problems
+function createBlocks(container, map)
+{
+  map.forEach((entries, category) =>
+  {
+    const categoryDiv = document.createElement('div');// create a div for each category
+    categoryDiv.classList.add('problemClassBlock'); 
+    categoryDiv.innerHTML = `<h2 style="margin-bottom: 0px;">${category}</h2><hr>`; // accordian div for each category
+    
+    const technique = problemClassTechnique.get(category); // get the problem solving technique for each category
+    const problemClassDiv = document.createElement('div');
+    problemClassDiv.innerHTML = `<p>${technique}</p>`;
+    categoryDiv.appendChild(problemClassDiv);
 
+    const problems = document.createElement('div');
+    problems.innerHTML = '<button class="accordion">Problems</button>';
+    const panel = document.createElement('div');
+    panel.classList.add('panel');
+    problems.appendChild(panel);
+
+    categoryDiv.appendChild(problems);
     entries.forEach(entry => {
       const [filename, difficulty] = entry;
       const dynamicURL = constructURL(category, filename);
@@ -168,7 +199,7 @@ function createLinks(container, map) {
         listItem.classList.add('hard');
       }
       listItem.appendChild(linkElement);
-      panelDiv.appendChild(listItem);
+      panel.appendChild(listItem);
     });
 
     container.appendChild(categoryDiv);
@@ -194,5 +225,5 @@ function accordion() {
 
 // Example usage
 const arrayContainer = document.querySelector('.links-list');
-createLinks(arrayContainer, linkMap);
+createBlocks(arrayContainer, linkMap);
 accordion();

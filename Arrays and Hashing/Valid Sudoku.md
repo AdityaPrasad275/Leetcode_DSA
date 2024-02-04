@@ -7,7 +7,7 @@ Check if given sudoku is valid or nah, which involves three steps:
 1) check every row for unique 1-9  
 2) check every column for uniqueness
 3) check every 3x3 cell for uniqueness  
-Use unordered set
+Use unordered set as it has $O(1)$ lookup time.
 ## code
 ```cpp
 bool isValidSudoku(std::vector<std::vector<char>>& board) 
@@ -72,3 +72,4 @@ bool isValidSudoku(std::vector<std::vector<char>>& board)
 ```
 
 ## Time complexity: $O(3 \cdot 81)$ 
+Three loops over the board, each of size 9x9. Unordered set has $O(1)$ lookup time.
