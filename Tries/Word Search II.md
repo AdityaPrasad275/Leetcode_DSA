@@ -6,9 +6,9 @@ In a 2D board of letters, find ALL THE WORDS in the dictionary that can be forme
 This is a sequel to [Word Search I](https://leetcode.com/problems/word-search/), which is a slightly easier problem. In that problem, we only need to find one word in the board. In this problem, we need to find all the words in the board. This is a much harder problem.
 # Solution
 ## Trick
-Word search I uses backtracking/recursion over the whole board to find the one word. That problems time complexity is about $O(m*n*4^k)$, where $m$ and $n$ are the dimensions of the board and $k$ is the length of the word. This problem is much harder because we need to find all the words in the board. If we use the same backtracking/recursion approach, the time complexity will be $O(m*n*4^k*w)$, where $w$ is the number of words in the dictionary. This is too slow.  
+Word search I uses backtracking/recursion over the whole board to find the one word. That problems time complexity is about $O(m\cdot n\cdot 4^k)$ , where $m$ and $n$ are the dimensions of the board and $k$ is the length of the word. This problem is much harder because we need to find all the words in the board. If we use the same backtracking/recursion approach, the time complexity will be $O(m \cdot n \cdot 4^k \cdot w)$, where $w$ is the number of words in the dictionary. This is too slow.  
 
-So we use trie data structure to organise our dictionary/words to search. This will reduce the time complexity to $O(m*n*4^k)$, which is the same as word search I. Trie helps us simultaneously search a lot of words with same prefix. This is the key to solving this problem.
+So we use trie data structure to organise our dictionary/words to search. This will reduce the time complexity to $O(m\cdot n\cdot 4^k)$ , which is the same as word search I. Trie helps us simultaneously search a lot of words with same prefix. This is the key to solving this problem.
 
 Note- I have spent hours (7 to be exact) trying to do this problem and it did not work. I am just going to copy paste from neetcode.
 ## Code
