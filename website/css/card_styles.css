@@ -1,0 +1,73 @@
+:root {
+  --light-background: white;
+  --light-card: lightblue;
+  --light-text: #333;
+  --light-border: #ddd;
+
+  --dark-background: linear-gradient(to right, #130F40, rgb(7, 76, 99));
+  --dark-card: darkblue;
+  --dark-text: #fff;
+  --dark-border: #666;
+  --card-height: ;
+  --cards-container-height: ;
+}
+
+.topic-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  padding: 5px;
+  gap: 15px;
+  height: auto;
+}
+
+body.light-mode {
+  background: var(--light-background);
+  color: var(--light-text);
+}
+
+body.dark-mode {
+  background: var(--dark-background);
+  color: var(--dark-text);
+}
+
+.topic-card {
+  padding: 10px;
+  border-radius: 5px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  height: var(--card-height);
+  /* display: inline-grid;
+  justify-content: center;
+  align-content: center;
+  text-align: center; */
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1); /* Adjust this value for light theme */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Border for "glass" effect */
+  width: auto;
+}
+
+.light-mode .topic-card {
+  
+  color: var(--light-text);
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1), 0 0 0 1px var(--light-border);
+}
+
+.dark-mode .topic-card {
+  
+  color: var(--dark-text);
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.2), 0 0 0 1px var(--dark-border);
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .topic-card:hover {
+  box-shadow: 0px 2px 15px 5px rgba(0,0,0,0.2), 0 0 0 1px var(--light-border);
+}
+
+.dark-mode .topic-card:hover {
+  box-shadow: 0px 2px 15px 5px rgba(0, 0, 0, 0.4), 0 0 0 1px var(--dark-border);
+}
+
+.topic-card:hover {
+  transform: scale(1.05);
+}
