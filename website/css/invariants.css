@@ -1,0 +1,33 @@
+.footer {
+  position: bottom;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.dark-mode .footer {
+  color: white;
+}
+
+.light-mode .footer {
+  color: black;
+}
+
+.footer a {
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.dark-mode .footer a {
+  color: white;
+}
+
+.light-mode .footer a {
+  color: black;
+}
+
+.footer img {
+  vertical-align: middle;
+}

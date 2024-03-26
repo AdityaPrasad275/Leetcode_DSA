@@ -9,31 +9,44 @@
     <script src="../website/js/mathjaxConfig.js" defer></script>
     <!-- Mathjax library version 2 because docs have config file for version 2-->
     <script src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_CHTML"></script>
+    <!-- Link list generator function -->
+    <script src="/website/js/link_list.js"></script>
+    <script src="/website/js/invariants.js" defer></script>
+    <link rel="stylesheet" href="/website/css/invariants.css">
+    <script src="/website/js/theme_script.js" defer></script>
+    <link rel="stylesheet" href="/website/css/description_styles.css">
   </head>
 
   <body>
-    <h1>Jist of arrays</h1>
-    <hr>
-    <ul>
-      <li>Sorting: An $O(n \cdot logn)$ process. Quick sort, merge sort, Bubble sort ($O(n^2)$)</li>
+    <div class="summary">
+      <h2>Jist of arrays</h2>
+      <hr>
+      <ul>
+        <li>Sorting: An $O(n \cdot logn)$ process. Quick sort, merge sort, Bubble sort ($O(n^2)$)</li>
 
-      <ul>
-        <li><code>std::sort(vector.begin(), vector.end())</code> => can be considered $O(n)$ for all practical purposes
+        <ul>
+          <li><code>std::sort(vector.begin(), vector.end())</code> => can be considered $O(n)$ for all practical
+            purposes
+          </li>
+        </ul>
+        <li> For string problems, maintaining frequency maps is often required. One can use an array or hashtable for
+          it.
+          In general, <code>std::unordered_map</code> is very useful in "grouping" problems
         </li>
+        <ul>
+          <li><code>std::array&lt;int, 26&gt; freq;</code></li>
+          <li><code>std::unordered_map&lt;char (or int), int&gt; freqMap;</code></li>
+        </ul>
+        <li><code>std::unordered_set&lt;int&gt;</code> is a great data structure. $O(1)$ insertion,
+          $O(1)$ search and no duplicates (for <code>std::set</code>, everything is $O(logn)$)</li>
       </ul>
-      <li> For string problems, maintaining frequency maps is often required. One can use hashmap or std::array (uses
-        much lesser space) for it. In general, <code>std::unordered_map</code> is very useful in "grouping" problems
-      </li>
-      <ul>
-        <li><code>std::array&lt;int, 26&gt; freq;</code></li>
-        <li><code>std::unordered_map&lt;char (or int), int&gt; freqMap;</code></li>
-      </ul>
-      <li><code>std::unordered_set&lt;int&gt;</code> is a great data structure. $O(1)$ insertion,
-        $O(1)$ search and no duplicates (for <code>std::set</code>, everything is $O(logn)$)</li>
-    </ul>
-    <h1>Problems</h1>
-    <hr>
-    <div class="problem-list"></div>
+    </div>
+    <div class="problems">
+      <h2>Problems</h2>
+      <hr>
+      <div class="problem-list"></div>
+    </div>
+    <div id="footer"></div>
   </body>
   <script>
     const folder = 'Arrays and Hashing';
@@ -47,24 +60,7 @@
       ["Valid Sudoku", 2],
       ["Longest Consecutive Sequence", 2],
     ]
-    const problemList = document.querySelector('.problem-list');
-    const list = document.createElement('ul');
-    files.forEach(files => {
-      const encodedFileName = encodeURIComponent(files[0]);
-      const encodedFolderName = encodeURIComponent(folder);
-
-      const url = `../website/html/md_render.html?url=${encodedFolderName}/${encodedFileName}.md`;
-
-      const a = document.createElement('a');
-      a.href = url;
-      a.textContent = files[0];
-      a.style.display = 'block';
-      a.style.margin = '10px 0px';
-      const li = document.createElement('li');
-      li.appendChild(a);
-      list.appendChild(li);
-      problemList.appendChild(list);
-    })
+    generateLinkList(files, folder);
   </script>
 
 </html>
