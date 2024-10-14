@@ -33,7 +33,7 @@ I follow https://neetcode.io/roadmap and other online resources.
 ### Heap/priority_queue done 🥳
 7/7 done
 ### Graph
-9/13 questions done  
+10/13 questions done  
 ### 1-D Dynamic Programming
 12/12 questions done  
 
