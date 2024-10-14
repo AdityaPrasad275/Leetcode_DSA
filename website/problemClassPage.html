@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dashboardStyles.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
     <title>Problem Class Page</title>
     <script>
       document.addEventListener('DOMContentLoaded', () => {
@@ -19,9 +20,15 @@
             .then(response => response.json())
             .then(data => {
               const problems = data[problemClassName];
+              //console.log(problems);
               const problemList = document.getElementById('problem-list');
               for (const problem in problems) {
+                if(problem === "summary"){
+                  document.getElementById('summary').setAttribute('src', `../${problemClassName}/${problem}.md`);
+                  continue;
+                }
                 if (problems.hasOwnProperty(problem)) {
+                  //console.log(problem);
                   const li = document.createElement('li');
                   li.textContent = problem;
                   problemList.appendChild(li);
@@ -37,6 +44,9 @@
   <body>
     <div class="container">
     <h1 id="problem-class-name"></h1>
+    <zero-md id="summary"> </zero-md>
+      
+  
     <ul id="problem-list"></ul>
     </div>
   </body>
