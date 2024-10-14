@@ -11,8 +11,7 @@ I follow https://neetcode.io/roadmap and other online resources.
 
 ### array & hashing 
 9/9 problems solved   
-1 soln left to upload   
-- Encode and Decode strings 
+
 ### stack 
 7/7  problems done  
 1 stack resource added, need to upload the website
@@ -35,19 +34,11 @@ I follow https://neetcode.io/roadmap and other online resources.
 7/7 done
 ### Graph
 9/13 questions done  
-1 soln left to upload
-- walls and gates
 ### 1-D Dynamic Programming
 12/12 questions done  
-4 soln left to upload
-- max product subarray
-- word break
-- longest increasing subsequence
-- partition equal subset sum
+
 ### Intervals
 2/6 questions done  
-2 soln left to upload
-- Insert interval
-- Merge intervals
+
 ### Bit manipulation
 5/7 questions done

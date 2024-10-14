@@ -36,6 +36,7 @@ function buildMonoStack(arr) {
 
 ![hi](https://assets.leetcode.com/users/images/3b666e9c-4200-4245-bce8-7d7e81649f8f_1659039679.8631365.png)
 
+The table below shows the relationship between the current element and the top of the stack, the type of stack (increasing or decreasing), the operator used in the while loop, and the position of the assignment.
 
 | Problem          	| Stack Type                 	| Operator in while loop 	| Assignment Position 	|
 |------------------	|----------------------------	|------------------------	|---------------------	|
