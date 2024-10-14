@@ -1,0 +1,72 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  min-height: 100vh;
+  background: linear-gradient(180deg, rgb(7, 2, 113) 0%, rgba(75, 0, 130, 1) 100%);
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  margin: 20px;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  font-size: xx-large;
+}
+.grid-card {
+  box-sizing: border-box;
+  width: 150px;
+  height: 93px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+    gap: 20px;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+
+.grid-card:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+.grid-card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.problem-classes-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  /* Optional: Inherit the color from the parent element */
+}

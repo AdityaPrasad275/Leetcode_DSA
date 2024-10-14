@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboardStyles.css">
+    <title>Problem Class Page</title>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const problemClassName = urlParams.get('name');
+
+        if (problemClassName) {
+          document.getElementById('problem-class-name').textContent = problemClassName;
+
+          // Fetch and display the content for the problem class
+          fetch('./linkMap.json')
+            .then(response => response.json())
+            .then(data => {
+              const problems = data[problemClassName];
+              const problemList = document.getElementById('problem-list');
+              for (const problem in problems) {
+                if (problems.hasOwnProperty(problem)) {
+                  const li = document.createElement('li');
+                  li.textContent = problem;
+                  problemList.appendChild(li);
+                }
+              }
+            })
+            .catch(error => console.error('Error fetching problem class data:', error));
+        }
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+    <h1 id="problem-class-name"></h1>
+    <ul id="problem-list"></ul>
+    </div>
+  </body>
+
+</html>
