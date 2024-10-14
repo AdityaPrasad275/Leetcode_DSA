@@ -2,20 +2,21 @@
 A repo for 150 problem set from neetcode's rodemap, all problems' simplified statement and their answer is stored here
 
 # Plan of action
-17th may to 30th July is timeperiod for completion of 150 problems.
+Complete all problems and get DSA ready for placements
 
 I follow https://neetcode.io/roadmap and other online resources.
 
 # Where we at right now 
-## 83 problems done !
-![Progress](https://progress-bar.dev/55/?scale=100&width=300&color=brightgreen)  
-14th june - the 100s have been breached 🥳
-29th june - 50% done 🥳, we are halfway there  
+## 107 problems done !
 
-### array & hashing done 🥳
-8/9 problems solved, 1 problem requires premium, cant help it.  
-### stack done 🥳
-7/7  done  
+### array & hashing 
+9/9 problems solved   
+1 soln left to upload   
+- Encode and Decode strings 
+### stack 
+7/7  problems done  
+1 stack resource added, need to upload the website
+
 ### Two Pointers done 🥳
 5/5  done  
 ### Linked List done 🥳
@@ -33,4 +34,20 @@ I follow https://neetcode.io/roadmap and other online resources.
 ### Heap/priority_queue done 🥳
 7/7 done
 ### Graph
-4/13 done
+9/13 questions done  
+1 soln left to upload
+- walls and gates
+### 1-D Dynamic Programming
+12/12 questions done  
+4 soln left to upload
+- max product subarray
+- word break
+- longest increasing subsequence
+- partition equal subset sum
+### Intervals
+2/6 questions done  
+2 soln left to upload
+- Insert interval
+- Merge intervals
+### Bit manipulation
+5/7 questions done
