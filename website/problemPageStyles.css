@@ -1,0 +1,14 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  min-height: 100vh;
+  background: linear-gradient(180deg, rgb(26, 87, 179) 0%, rgb(98, 38, 238) 100%);
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+}

@@ -1,0 +1,58 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  min-height: 100vh;
+  background: linear-gradient(180deg, rgb(26, 87, 179) 0%, rgb(98, 38, 238) 100%);
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+#problem-class-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  margin: 20px;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  font-size: xx-large;
+}
+
+#summary {
+  padding: 10px;
+  margin: 10px;
+}
+
+.list-heading {
+  font-size: xx-large;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  /* justify-content: center;
+      align-items: center; */
+  padding: 20px;
+  background: rgba(168, 166, 166, 0.2);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  margin: 20px;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  font-size: x-large;
+
+}
+
+li {
+  list-style-type: none;
+}

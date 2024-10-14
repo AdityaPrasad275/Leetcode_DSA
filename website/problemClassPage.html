@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dashboardStyles.css">
+    <link rel="stylesheet" href="problemClassPageStyles.css">
     <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
     <title>Problem Class Page</title>
     <script>
@@ -30,7 +30,10 @@
                 if (problems.hasOwnProperty(problem)) {
                   //console.log(problem);
                   const li = document.createElement('li');
-                  li.textContent = problem;
+                  const a = document.createElement('a');
+                  a.textContent = problem;
+                  a.href = `./problemPage.html?url=${problemClassName}/${problem}`;
+                  li.appendChild(a);
                   problemList.appendChild(li);
                 }
               }
@@ -44,8 +47,13 @@
   <body>
     <div class="container">
     <h1 id="problem-class-name"></h1>
-    <zero-md id="summary"> </zero-md>
+    <zero-md id="summary"> 
+      <template>
+        <link rel="stylesheet" href="problemClassPageStyles.css">
+      </template>
+    </zero-md>
       
+    <div class="list-heading">List of problems</div>
   
     <ul id="problem-list"></ul>
     </div>

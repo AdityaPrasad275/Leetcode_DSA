@@ -7,7 +7,7 @@ body {
 
 .container {
   min-height: 100vh;
-  background: linear-gradient(180deg, rgb(7, 2, 113) 0%, rgba(75, 0, 130, 1) 100%);
+  background: linear-gradient(180deg, rgb(26, 87, 179) 0%, rgb(98, 38, 238) 100%);
   display: flex;
   flex-direction: column;
   font-family: sans-serif;
@@ -30,7 +30,7 @@ body {
   box-sizing: border-box;
   width: 150px;
   height: 93px;
-  background: rgba(217, 217, 217, 0.58);
+  background: rgba(217, 217, 217, 0.38);
   border: 1px solid white;
   box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
   backdrop-filter: blur(6px);
