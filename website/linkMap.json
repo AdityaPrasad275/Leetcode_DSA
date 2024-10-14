@@ -1,0 +1,128 @@
+{
+  "1-D DP": {
+    "Climbing stairs": 2,
+    "coin change": 2,
+    "Decode ways": 2,
+    "House robber 2": 2,
+    "House robber": 2,
+    "Longest palindromic substring": 2,
+    "min cost climbing stairs": 2,
+    "Palindromic substrings": 2
+  },
+  "Arrays & hashing": {
+    "Contains Duplicate": 2,
+    "Group Anagrams": 2,
+    "Longest Consecutive Sequence": 2,
+    "Product of Array except self": 2,
+    "Top K frequent Elements": 2,
+    "Two sum": 2,
+    "Valid Anagram": 2,
+    "Valid Sudoku": 2
+  },
+  "backtracking": {
+    "Combination sum II": 2,
+    "combination sum": 2,
+    "Letter Combinations of a Phone Number": 2,
+    "n-queens": 2,
+    "palindrome partitioning": 2,
+    "permutations": 2,
+    "subset II": 2,
+    "subsets": 2,
+    "word search": 2
+  },
+  "Binary search": {
+    "Binary Search": 2,
+    "Find Minimum in rotated sorted array": 2,
+    "Koko eating bananas": 2,
+    "Median of two sorted arrays": 2,
+    "Search a 2D matrix": 2,
+    "Search in rotated array": 2,
+    "Time based key value store": 2
+  },
+  "Bit Manipulation": {
+    "Counting bits": 2,
+    "Missing number": 2,
+    "Number of 1-bits": 2,
+    "Reverse Bits": 2,
+    "single number": 2
+  },
+  "Graph": {
+    "Clone graph": 2,
+    "Course Schedule II": 2,
+    "Course schedule": 2,
+    "Max area of island": 2,
+    "Number of Islands": 2,
+    "Pacific Atlantic water flow": 2,
+    "rotting oranges": 2,
+    "surrounding regions": 2
+  },
+  "Heap": {
+    "design twitter": 2,
+    "Find Median from data stream": 2,
+    "k closest points to origin": 2,
+    "kth largest element in a stream": 2,
+    "Kth largest element in an array": 2,
+    "Last stone weight": 2,
+    "task scheduler": 2
+  },
+  "Linked Lists": {
+    "Add two numbers": 2,
+    "Copy List with random pointer": 2,
+    "find the duplicate number": 2,
+    "Linked List cycle": 2,
+    "LRU cache": 2,
+    "Merge k sorted Lists": 2,
+    "Merge two sorted lists": 2,
+    "Remove nth node from end of list": 2,
+    "Reorder List": 2,
+    "Reverse Linked list": 2,
+    "Reverse Nodes in k-group": 2
+  },
+  "Sliding Window": {
+    "Buy and Sell stocks": 2,
+    "Longest repeating character replacement": 2,
+    "longest substring without repeating characters": 2,
+    "Minimum window substring": 2,
+    "permutation in string": 2,
+    "Sliding window maximum": 2
+  },
+  "Stack": {
+    "Car Fleet": 2,
+    "Daily temperatures": 2,
+    "Evaluate Reverse Polish Notation": 2,
+    "Generate Parentheses": 2,
+    "great stack resource": 2,
+    "Largest Rectangle in Histogram": 2,
+    "Min Stack": 2,
+    "Valid Parentheses": 2
+  },
+  "Trees": {
+    "Balance Binary tree": 2,
+    "BT level order traversal": 2,
+    "BT max path sum": 2,
+    "BT right side view": 2,
+    "Construct BT from preoder and inorder": 2,
+    "Count good nodes": 2,
+    "Diameter of Binary Tree": 2,
+    "Invert Binary Tree": 2,
+    "Kth smallest element in BST": 2,
+    "LCA of BST": 2,
+    "maximum depth of Binary tree": 2,
+    "Same Tree": 2,
+    "Serialize and Deserialize a BT": 2,
+    "Subtree of Another tree": 2,
+    "Validate BST": 2
+  },
+  "Tries": {
+    "Design Add and Search word DS": 2,
+    "Implement prefix trie": 2,
+    "Word Search II": 2
+  },
+  "Two Pointers": {
+    "3sum": 2,
+    "container with most water": 2,
+    "rain trap": 2,
+    "Two Sum II": 2,
+    "Valid Palindrome": 2
+  }
+}
