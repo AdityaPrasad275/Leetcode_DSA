@@ -5,15 +5,20 @@
     "Decode ways": 2,
     "House robber 2": 2,
     "House robber": 2,
+    "Longest Increasing subsequence": 2,
     "Longest palindromic substring": 2,
+    "Max product subarray": 2,
     "min cost climbing stairs": 2,
-    "Palindromic substrings": 2
+    "Palindromic substrings": 2,
+    "Partition Equal Subset Sum": 2,
+    "Word break": 2
   },
   "Arrays & hashing": {
     "Contains Duplicate": 2,
     "Group Anagrams": 2,
     "Longest Consecutive Sequence": 2,
     "Product of Array except self": 2,
+    "String Encode and Decode": 2,
     "summary": 2,
     "Top K frequent Elements": 2,
     "Two sum": 2,
@@ -55,7 +60,12 @@
     "Number of Islands": 2,
     "Pacific Atlantic water flow": 2,
     "rotting oranges": 2,
-    "surrounding regions": 2
+    "surrounding regions": 2,
+    "Valid tree": 2,
+    "Walls and gates": 2
+  },
+  "Greedy": {
+    "Maximum Subarray": 2
   },
   "Heap": {
     "design twitter": 2,
@@ -65,6 +75,10 @@
     "Kth largest element in an array": 2,
     "Last stone weight": 2,
     "task scheduler": 2
+  },
+  "Intervals": {
+    "Insert Interval": 2,
+    "Merge Intervals": 2
   },
   "Linked Lists": {
     "Add two numbers": 2,
