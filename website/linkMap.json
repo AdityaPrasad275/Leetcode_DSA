@@ -65,6 +65,8 @@
     "Walls and gates": 2
   },
   "Greedy": {
+    "Jump Game II": 2,
+    "Jump Game": 2,
     "Maximum Subarray": 2
   },
   "Heap": {
@@ -78,7 +80,11 @@
   },
   "Intervals": {
     "Insert Interval": 2,
-    "Merge Intervals": 2
+    "Meeting schedule II": 2,
+    "Meeting schedule": 2,
+    "Merge Intervals": 2,
+    "Minimum interval to include each query": 2,
+    "Non overlapping intervals": 2
   },
   "Linked Lists": {
     "Add two numbers": 2,
